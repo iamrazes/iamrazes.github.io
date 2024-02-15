@@ -1,15 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi! I'm Razes</title>
-    <link href="./output.css" rel="stylesheet">
+    <title>iamrazes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/public/favicon2.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9edda7b014.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            /* font-size: 48px; */
+        }
+
+        .kanit-regular {
+            font-family: "Kanit", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+    </style>
 </head>
+
 <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quaerat laborum maiores? Dicta, recusandae? Labore modi quis, voluptatem nam fuga in veritatis necessitatibus, fugiat obcaecati ex veniam. Praesentium, rem maxime?</p>
+    <!-- navigation -->
+    <div class="flex justify-between items-center mx-auto bg-white max-w-screen-lg py-8 ">
+        <div>
+            <p class="text-xl font-bold" style="font-family: Kanit;"><i class="fa fa-code align-middle"></i> iamrazes
+            </p>
+        </div>
+        <div class="flex flex-row gap-x-12 uppercase text-xm font-semibold" style="font-family: Kanit;">
+            <a href="" class="hover:text-[#3577b3] transition ease-in-out ">home</a>
+            <a href="#aboutme" class="hover:text-[#3577b3] transition ease-in-out ">about me</a>
+            <a href="" class="hover:text-[#3577b3] transition ease-in-out ">portofolio</a>
+            <a href="" class="hover:text-[#3577b3] transition ease-in-out ">contact</a>
+        </div>
+    </div>
+
+    <!-- header -->
+    <div class="mx-auto max-w-screen-lg mt-2">
+        <div class="flex justify-between ">
+            <div class="mt-12">
+                <h1 class="text-4xl">Muhammad <b>Razes</b> <br>Dagistan Silawane</h1>
+                <div class="bg-[#3577b3] w-44 h-1 mt-4"></div>
+            </div>
+            <div class="flex flex-col text-right text-2xl gap-y-4 mt-12">
+                <span class="font-bold underline underline-offset-8 text-[#3577b3]">Digital Experience</span>
+                <span><b>Fullstack Developers</b></span>
+                <span><b>Graphic Designer</b></span>
+                <span><b>Illustrator</b></span>
+                <span><b>UI/UX</b></span>
+            </div>
+        </div>
+        <div class="-mt-[200px]">
+            <img src="/public/profile.png" style="height: 512px;" class="mx-auto " alt="">
+        </div>
+        <div class="flex justify-end gap-x-3 my-2  text-[#3577b3]">
+
+            <a href="#"
+                class="border transition ease-in-out border-[#3577b3] hover:text-white hover:bg-[#3577b3] p-2 text-center align-middle w-10"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="#"
+                class="border transition ease-in-out border-[#3577b3] hover:text-white hover:bg-[#3577b3] p-2 text-center align-middle w-10"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="#"
+                class="border transition ease-in-out border-[#3577b3] hover:text-white hover:bg-[#3577b3] p-2 text-center align-middle w-10"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="#"
+                class="border transition ease-in-out border-[#3577b3] hover:text-white hover:bg-[#3577b3] p-2 text-center align-middle w-10"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="#"
+                class="border transition ease-in-out border-[#3577b3] hover:text-white hover:bg-[#3577b3] p-2 text-center align-middle w-10"><i
+                    class="fab fa-github"></i></a>
+        </div>
+    </div>
+
+
+    <!-- about me:introduction -->
+    <div class="mt-12 mx-auto max-w-screen-lg" id="aboutme">
+        <h1 class="text-2xl font-bold">About Me</h1>
+        <div class="bg-[#3577b3] w-8 h-1 my-2"></div>
+        <div class="relative bg-gray-50 my-8 px-16 py-16 overflow-hidden">
+            <div class="flex">
+                <div class="flex flex-col gap-y-4">
+                    <h1 class="text-3xl font-semibold">Lorem ipsum dolor sit</h1>
+                    <p class="max-w-[512px] whitespace-normal">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Dicta expedita autem adipisci nulla veritatis corporis ipsam eum labore rerum cumque ad
+                        itaque culpa minus nam, at repudiandae consequuntur voluptates soluta. Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Nam doloribus deleniti aut quae ad tempora nobis ex sapiente.
+                        At sit ratione praesentium quo exercitationem ab quidem labore tenetur tempora quas.</p>
+                </div>
+                <div class="flex flex-col gap-y-8 mt-12 ml-16 text-sm " style="font-family: Kanit;">
+                    <a href="#" class="hover:text-blue-500"><i class="fa-regular fa-envelope align-middle "></i>
+                        iamrazes.official@gmail.com</a>
+                    <a href="#" class="hover:text-green-500"><i class="fa-brands fa-whatsapp align-middle "></i> +62
+                        895-6359-03620</a>
+                    <a href="#" class="hover:text-pink-500"><i class="fa-brands fa-instagram align-middle "></i>
+                        @iamrazes</a>
+                </div>
+            </div>
+            <div class="absolute bottom-0 right-0 -mb-32 -mr-32">
+                <img src="/public/spiral.png"
+                    style="max-height: 300px; filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);"
+                    alt="">
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- about me:educations -->
+    <div class="mt-12 mx-auto max-w-screen-lg">
+        <div class="flex">
+            <div class="flex flex-col">
+                <h1 class="text-2xl font-bold w-40">Educations <br>& Experience</h1>
+                <div class="flex">
+                    <div class="flex">
+                        <div class="flex flex-col text-center">
+                            <div class="bg-[#3577b3] w-8 h-1 mt-2"></div>
+                            <div class="bg-[#3577b3] h-80 w-1 ml-[14px]"></div>
+                            <div class="bg-[#3577b3] rounded-full border border-white w-2 h-2 -mt-1 ml-[12px]">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-y-28 my-16" style="font-family: Kanit;">
+                            <div class="flex align-middle">
+                                <div class="rounded-full w-2 h-2 bg-[#3577b3] border border-white align-middle -ml-5"></div>
+                                <a href="#" class="align-middle ml-4 -mt-2 hover:font-bold transition ease-in-out">2019</a>
+                            </div>
+                            <div class="flex align-middle">
+                                <div class="rounded-full w-2 h-2 bg-[#3577b3] border border-white align-middle -ml-5"></div>
+                                <a href="#" class="align-middle ml-4 -mt-2 hover:font-bold transition ease-in-out">2024</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2019 -->
+            <div class="flex gap-x-12 ml-24">
+                <div class="border shadow-lg w-72 h-[400px]">
+                    <div class="flex flex-col items-center justify-between gap-y-4">
+                        <img src="/public/dagistan-1.jpg" class="rounded-b-full" style="width: 180px;" alt="">
+                        <div class="flex flex-col text-center">
+                            <span class="material-symbols-outlined text-6xl">
+                                school
+                            </span>
+                            <span class="font-semibold" style="font-family: Kanit;">High School Graduate</span>
+                            <span class="text-sm" style="font-family: Kanit;">MAN 2 Cianjur</span>
+                            <span class="text-sm" style="font-family: Kanit;">2019</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-x-12">
+                    <div class="border w-72 h-[400px] overflow-hidden">
+                        <div class="flex flex-col text-center items-center max-w-full">
+                            <!-- bg -->
+                            <img src="/public/spiral.png" class="ml-60 -mt-12"
+                                style="opacity: 0.4;
+                            width: 128px; 
+                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+                            <img src="/public/telkom.png" class="mt-6"
+                                style="width: 128px; height: 128px; object-fit: cover;" alt="">
+                            <div class="flex flex-col text-center">
+                                <span class="font-semibold" style="font-family: Kanit;">Intern at Telkom
+                                    Indonesia</span>
+                                <span class="text-sm" style="font-family: Kanit;">2018</span>
+                            </div>
+                            <!-- bg -->
+                            <img src="/public/spiral.png" class="mr-64 -mb-40 overflow-hidden"
+                                style="opacity: 0.4;
+                            width: 258px; 
+                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+                        </div>
+                    </div>
+                    <div class="border w-72 h-[400px] overflow-hidden">
+                        <div class="flex flex-col text-center items-center max-w-full">
+                            <!-- bg -->
+                            <img src="/public/spiral.png" class="mr-60 left-0 mt-4"
+                                style="opacity: 0.4;
+                            width: 128px; 
+                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+                            <span class="material-symbols-outlined text-[100px] -mt-3 text-[#3577b3] ">
+                                campaign
+                            </span>
+                            <div class="flex flex-col text-center">
+                                <span class="font-semibold" style="font-family: Kanit;">English Speech Contest</span>
+                                <span class="text-sm" style="font-family: Kanit;">1st Winner & 3rd Winner</span>
+                                <span class="text-sm" style="font-family: Kanit;">Regional & Province</span>
+                                <span class="text-sm" style="font-family: Kanit;">2017</span>
+                            </div>
+                            <!-- bg -->
+                            <img src="/public/spiral.png" class="right-0 ml-64 -mb-32 overflow-hidden"
+                                style="opacity: 0.4;
+                            width: 258px; 
+                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- recent -->
+
+        </div>
+    </div>
+
+    <!-- about me:skills -->
+    <div class="mt-12 mx-auto max-w-screen-lg">
+
+    </div>
+
+    <!-- footer -->
+    <div class="mx-auto text-center mt-20">
+        <p class="text-sm">Made with <b>TailwindCSS</b>. Inspired from <b><a
+                    href="https://www.uplabs.com/posts/personal-portfolio-website-template-9c691996-d0b6-469f-8c32-76e8b7df7cc3">Kreativspace</a></b>
+        </p>
+    </div>
+
 </body>
+
 </html>
