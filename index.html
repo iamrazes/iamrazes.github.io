@@ -13,8 +13,10 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="src/output.css" rel="stylesheet">
-    <link rel="shortcut icon" href="/public/favicon2.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/favicon.svg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/9edda7b014.js" crossorigin="anonymous"></script>
+
+    <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
 
     <style>
         body {
@@ -27,26 +29,35 @@
             font-weight: 300;
             font-style: normal;
         }
+
+        .bold {
+            font-weight: bold;
+        }
+    </style>
     </style>
 </head>
 
 <body>
     <!-- navigation -->
-    <div class="flex justify-between items-center mx-auto bg-white max-w-screen-lg py-8 ">
-        <div>
-            <p class="text-xl font-bold" style="font-family: Kanit;"><i class="fa fa-code align-middle"></i> iamrazes
-            </p>
-        </div>
-        <div class="flex flex-row gap-x-12 uppercase text-xm font-semibold" style="font-family: Kanit;">
-            <a href="" class="hover:text-[#3577b3] ">home</a>
-            <a href="#aboutme" class="hover:text-[#3577b3] ">about me</a>
-            <a href="" class="hover:text-[#3577b3] ">portofolio</a>
-            <a href="" class="hover:text-[#3577b3] ">contact</a>
+    <!-- navigation -->
+    <div class="fixed top-0 left-0 right-0 z-50 bg-white py-8 ">
+        <div class="container mx-auto flex justify-between items-center max-w-screen-lg">
+            <div>
+                <p class="text-xl font-bold" style="font-family: Kanit;"><i class="fa fa-code align-middle"></i>
+                    iamrazes</p>
+            </div>
+            <div class="flex flex-row gap-x-12 uppercase text-xs font-semibold" style="font-family: Kanit;">
+                <a href="" class="hover:text-[#3577b3] ">home</a>
+                <a href="#aboutme" class="hover:text-[#3577b3] ">about me</a>
+                <a href="#portofolio" class="hover:text-[#3577b3] ">portofolio</a>
+                <a href="" class="hover:text-[#3577b3] ">contact</a>
+            </div>
         </div>
     </div>
 
+
     <!-- header -->
-    <div class="mx-auto max-w-screen-lg mt-2">
+    <div class="mx-auto max-w-screen-lg mt-20">
         <div class="flex justify-between ">
             <div class="mt-12">
                 <h1 class="text-4xl">Muhammad <b>Razes</b> <br>Dagistan Silawane</h1>
@@ -60,10 +71,12 @@
                 <span><b>UI/UX</b></span>
             </div>
         </div>
-        <div class="-mt-[200px]">
-            <img src="/public/profile.png" style="height: 512px;" class="mx-auto " alt="">
+        <div class="-mt-[180px]">
+            <img src="/public/dagistan.png" style="height: 512px;" class="mx-auto rounded-b-full" alt="">
+            <div class="bg-[#3577b3] rounded-full -mt-[382px] ml-[321px]" style="height: 382px; width: 382px;"></div>
+            <!-- <img src="/public/profile.png" style="height: 512px;" class="mx-auto " alt=""> -->
         </div>
-        <div class="flex justify-end gap-x-3 my-2  text-[#3577b3]">
+        <div class="flex justify-end gap-x-3 my-2 mt-8 text-[#3577b3]">
 
             <a href="#"
                 class="border transition ease-in-out border-[#3577b3] hover:text-white hover:bg-[#3577b3] p-2 text-center align-middle w-10"><i
@@ -82,7 +95,6 @@
                     class="fab fa-github"></i></a>
         </div>
     </div>
-
 
     <!-- about me:introduction -->
     <div class="mt-20 py-4 mx-auto max-w-screen-lg" id="aboutme">
@@ -118,7 +130,7 @@
     </div>
 
     <!-- about me:educations -->
-    <div class="mt-20 py-4 mx-auto max-w-screen-lg">
+    <div class="mt-8 py-4 mx-auto max-w-screen-lg">
         <div class="flex">
             <div class="flex flex-col">
                 <h1 class="text-2xl font-bold w-40">Educations <br>& Experience</h1>
@@ -130,25 +142,78 @@
                             <div class="bg-[#3577b3] rounded-full border border-white w-2 h-2 -mt-1 ml-[12px]">
                             </div>
                         </div>
-                        <div class="flex flex-col gap-y-28 my-16" style="font-family: Kanit;">
+                        <div class="flex flex-col gap-y-28 mt-20" style="font-family: Kanit;">
                             <div class="flex align-middle">
                                 <div class="rounded-full w-2 h-2 bg-[#3577b3] border border-white align-middle -ml-5">
                                 </div>
-                                <a href="#"
-                                    class="align-middle ml-4 -mt-2 transition ease-in-out hover:font-bold">2019</a>
+                                <button id="highschool"
+                                    class="align-middle ml-4 -mt-2 transition ease-in-out hover:font-bold">2019</button>
                             </div>
                             <div class="flex align-middle">
                                 <div class="rounded-full w-2 h-2 bg-[#3577b3] border border-white align-middle -ml-5">
                                 </div>
-                                <a href="#"
-                                    class="align-middle ml-4 -mt-2 transition ease-in-out hover:font-bold ">2024</a>
+                                <button id="college"
+                                    class="align-middle ml-4 -mt-2 transition ease-in-out hover:font-bold ">2024</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- recent -->
+            <div class="flex gap-x-12 ml-24" id="college-section">
+                <!-- College section content -->
+
+                <div class="border shadow-lg w-72 h-[400px]">
+                    <div class="flex flex-col items-center justify-between gap-y-4">
+                        <img src="/public/profile.png" class="rounded-b-full" style="width: 180px;" alt="">
+                        <div class="flex flex-col text-center">
+                            <span class="material-symbols-outlined text-6xl">
+                                school
+                            </span>
+                            <span class="font-semibold" style="font-family: Kanit;">University Student</span>
+                            <span class="text-sm" style="font-family: Kanit;">Computer Science</span>
+                            <span class="text-sm" style="font-family: Kanit;">2020 -</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-x-12">
+                    <div class="border w-72 h-[400px] overflow-hidden">
+                        <div class="flex flex-col text-center items-center max-w-full">
+                            <!-- bg -->
+                            <img src="/public/spiral.png" class="ml-60 -mt-12"
+                                style="opacity: 0.4;
+                            width: 128px; 
+                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+
+
+                            <!-- bg -->
+                            <img src="/public/spiral.png" class="mr-64 -mb-40 overflow-hidden"
+                                style="opacity: 0.4;
+                            width: 258px; 
+                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+                        </div>
+                    </div>
+                    <div class="border w-72 h-[400px] overflow-hidden">
+                        <div class="flex flex-col text-center items-center max-w-full">
+                            <!-- bg -->
+                            <img src="/public/spiral.png" class="mr-60 left-0 mt-4"
+                                style="opacity: 0.4;
+                            width: 128px; 
+                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+
+                            <!-- bg -->
+                            <img src="/public/spiral.png" class="right-0 ml-64 -mb-32 overflow-hidden"
+                                style="opacity: 0.4;
+                            width: 258px; 
+                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- 2019 -->
-            <div class="flex gap-x-12 ml-24">
+            <div class="flex gap-x-12 ml-24" id="highschool-section" style="display: none;">
+                <!-- High School section content -->
+
                 <div class="border shadow-lg w-72 h-[400px]">
                     <div class="flex flex-col items-center justify-between gap-y-4">
                         <img src="/public/dagistan-1.jpg" class="rounded-b-full" style="width: 180px;" alt="">
@@ -208,15 +273,13 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <!-- recent -->
-
         </div>
     </div>
 
+
     <!-- about me:skills -->
-    <div class="mt-24 py-4 mx-auto max-w-screen-lg">
+    <div class="mt-20 py-4 mx-auto max-w-screen-lg">
         <div class="flex flex-row gap-x-8 justify-center">
             <div class="mt-44">
                 <div class="flex flex-col gap-y-8">
@@ -226,7 +289,8 @@
                                 palette
                             </span>
                             <h3 class="font-bold text-xl">Graphic Design</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis ea consectetur doloribus
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis ea consectetur
+                                doloribus
                             </p>
                             <div class="bottom-0">
                                 <a href="#" class="font-bold text-sm text-[#3577b3]" style="font-family: Kanit;"><span
@@ -242,7 +306,8 @@
                                 palette
                             </span>
                             <h3 class="font-bold text-xl">Graphic Design</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis ea consectetur doloribus
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis ea consectetur
+                                doloribus
                             </p>
                             <div class="bottom-0">
                                 <a href="#" class="font-bold text-sm text-[#3577b3]" style="font-family: Kanit;"><span
@@ -252,7 +317,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
             <div>
@@ -263,7 +328,8 @@
                                 palette
                             </span>
                             <h3 class="font-bold text-xl">Graphic Design</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis ea consectetur doloribus
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis ea consectetur
+                                doloribus
                             </p>
                             <div class="bottom-0">
                                 <a href="#" class="font-bold text-sm text-[#3577b3]" style="font-family: Kanit;"><span
@@ -285,7 +351,8 @@
                                 palette
                             </span>
                             <h3 class="font-bold text-xl">Graphic Design</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis ea consectetur doloribus
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis ea consectetur
+                                doloribus
                             </p>
                             <div class="bottom-0">
                                 <a href="#" class="font-bold text-sm text-[#3577b3]" style="font-family: Kanit;"><span
@@ -295,7 +362,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
             <div class="mt-44">
@@ -306,7 +373,8 @@
                                 palette
                             </span>
                             <h3 class="font-bold text-xl">Graphic Design</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis ea consectetur doloribus
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis ea consectetur
+                                doloribus
                             </p>
                             <div class="bottom-0">
                                 <a href="#" class="font-bold text-sm text-[#3577b3]" style="font-family: Kanit;"><span
@@ -322,7 +390,8 @@
                                 palette
                             </span>
                             <h3 class="font-bold text-xl">Graphic Design</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis ea consectetur doloribus
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis ea consectetur
+                                doloribus
                             </p>
                             <div class="bottom-0">
                                 <a href="#" class="font-bold text-sm text-[#3577b3]" style="font-family: Kanit;"><span
@@ -332,9 +401,60 @@
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- portofolio -->
+    <div class="mt-20 py-4 mx-auto max-w-screen-lg" id="portofolio">
+        <h1 class="text-2xl font-bold">Portofolio</h1>
+        <div class="bg-[#3577b3] w-8 h-1 my-2"></div>
+        <!-- button -->
+        <div class="flex justify-between uppercase py-3" style="font-family: Kanit;">
+            <div class="flex gap-x-6">
+                <button onclick="filterItems('websites', this)" class="bold">Websites</button>
+                <button onclick="filterItems('design', this)">Design</button>
+                <button onclick="filterItems('illustration', this)">Illustration</button>
+            </div>
+            <button onclick="showAll()" data-action="show-all" id="showAllButton">Show All</button>
+        </div>
+        <!-- website -->
+        <div class="grid grid-cols-4 gap-x-4 gap-y-4 mb-4" id="websiteItems">
+            <img src="/public/portofolio/1.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/1.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/1.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/1.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/1.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/1.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/1.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/1.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <!-- Add more website items here -->
+        </div>
+        <!-- design -->
+        <div class="grid grid-cols-4 gap-x-4 gap-y-4 mb-4" id="designItems" style="display: none;">
+            <img src="/public/portofolio/2.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/2.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/2.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/2.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/2.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/2.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/2.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/2.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <!-- Add more design items here -->
+        </div>
+        <!-- design -->
+        <div class="grid grid-cols-4 gap-x-4 gap-y-4 mb-4" id="illustrationItems" style="display: none;">
+            <img src="/public/portofolio/3.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/3.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/3.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/3.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/3.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/3.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/3.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <img src="/public/portofolio/3.jpg" class="aspect-square w-[256px] h-[256px] object-cover" alt="">
+            <!-- Add more design items here -->
         </div>
     </div>
 
@@ -345,6 +465,74 @@
         </p>
     </div>
 
+    <script>
+        // Get buttons
+        const collegeBtn = document.getElementById('college');
+        const highschoolBtn = document.getElementById('highschool');
+
+        // Get sections
+        const collegeSection = document.getElementById('college-section');
+        const highschoolSection = document.getElementById('highschool-section');
+
+        // Set default
+        collegeBtn.classList.add('font-bold');
+
+        // Add event listeners
+        collegeBtn.addEventListener('click', () => {
+            collegeBtn.classList.add('font-bold');
+            highschoolBtn.classList.remove('font-bold');
+            collegeSection.style.display = 'flex';
+            highschoolSection.style.display = 'none';
+        });
+
+        highschoolBtn.addEventListener('click', () => {
+            collegeBtn.classList.remove('font-bold');
+            highschoolBtn.classList.add('font-bold');
+            collegeSection.style.display = 'none';
+            highschoolSection.style.display = 'flex';
+        });
+    </script>
+
+    <script>
+        function filterItems(category, button) {
+            // Hide all item categories
+            document.getElementById('websiteItems').style.display = 'none';
+            document.getElementById('designItems').style.display = 'none';
+            document.getElementById('illustrationItems').style.display = 'none';
+
+            // Show items based on the selected category
+            if (category === 'websites') {
+                document.getElementById('websiteItems').style.display = 'grid';
+            } else if (category === 'design') {
+                document.getElementById('designItems').style.display = 'grid';
+            } else if (category === 'illustration') {
+                document.getElementById('illustrationItems').style.display = 'grid';
+            }
+
+            // Remove bold class from all buttons
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(btn => btn.classList.remove('bold'));
+
+            // Add bold class to the clicked button
+            button.classList.add('bold');
+        }
+    </script>
+    <script>
+        function showAll() {
+            // Show all item categories
+            document.getElementById('websiteItems').style.display = 'grid';
+            document.getElementById('designItems').style.display = 'grid';
+            document.getElementById('illustrationItems').style.display = 'grid';
+
+            // Remove bold class from all buttons
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(btn => btn.classList.remove('bold'));
+
+            // Add bold class to the "Show All" button
+            const showAllButton = document.querySelector('button[data-action="show-all"]');
+            showAllButton.classList.add('bold');
+        }
+    </script>
 </body>
 
 </html>
