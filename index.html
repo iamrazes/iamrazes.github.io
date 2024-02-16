@@ -39,7 +39,6 @@
 
 <body>
     <!-- navigation -->
-    <!-- navigation -->
     <div class="fixed top-0 left-0 right-0 z-50 bg-white py-8 ">
         <div class="container mx-auto flex justify-between items-center max-w-screen-lg">
             <div>
@@ -54,7 +53,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- header -->
     <div class="mx-auto max-w-screen-lg mt-20">
@@ -71,12 +69,12 @@
                 <span><b>UI/UX</b></span>
             </div>
         </div>
-        <div class="-mt-[180px]">
+        <div class="-mt-[160px]">
             <img src="/public/dagistan.png" style="height: 512px;" class="mx-auto rounded-b-full" alt="">
             <div class="bg-[#3577b3] rounded-full -mt-[382px] ml-[321px]" style="height: 382px; width: 382px;"></div>
             <!-- <img src="/public/profile.png" style="height: 512px;" class="mx-auto " alt=""> -->
         </div>
-        <div class="flex justify-end gap-x-3 my-2 mt-8 text-[#3577b3]">
+        <div class="flex justify-end gap-x-3 mt-8 text-[#3577b3]">
 
             <a href="#"
                 class="border transition ease-in-out border-[#3577b3] hover:text-white hover:bg-[#3577b3] p-2 text-center align-middle w-10"><i
@@ -97,7 +95,7 @@
     </div>
 
     <!-- about me:introduction -->
-    <div class="mt-20 py-4 mx-auto max-w-screen-lg" id="aboutme">
+    <div class="pt-24 pb-4 -mt-8 mx-auto max-w-screen-lg" id="aboutme">
         <h1 class="text-2xl font-bold">About Me</h1>
         <div class="bg-[#3577b3] w-8 h-1 my-2"></div>
         <div class="relative bg-gray-50 my-8 px-16 py-24 overflow-hidden">
@@ -130,7 +128,7 @@
     </div>
 
     <!-- about me:educations -->
-    <div class="mt-8 py-4 mx-auto max-w-screen-lg">
+    <div class="mt-6 py-4 mx-auto max-w-screen-lg">
         <div class="flex">
             <div class="flex flex-col">
                 <h1 class="text-2xl font-bold w-40">Educations <br>& Experience</h1>
@@ -146,13 +144,13 @@
                             <div class="flex align-middle">
                                 <div class="rounded-full w-2 h-2 bg-[#3577b3] border border-white align-middle -ml-5">
                                 </div>
-                                <button id="highschool"
+                                <button id="highschoolBtn"
                                     class="align-middle ml-4 -mt-2 transition ease-in-out hover:font-bold">2019</button>
                             </div>
                             <div class="flex align-middle">
                                 <div class="rounded-full w-2 h-2 bg-[#3577b3] border border-white align-middle -ml-5">
                                 </div>
-                                <button id="college"
+                                <button id="collegeBtn"
                                     class="align-middle ml-4 -mt-2 transition ease-in-out hover:font-bold ">2024</button>
                             </div>
                         </div>
@@ -165,7 +163,7 @@
 
                 <div class="border shadow-lg w-72 h-[400px]">
                     <div class="flex flex-col items-center justify-between gap-y-4">
-                        <img src="/public/profile.png" class="rounded-b-full" style="width: 180px;" alt="">
+                        <img src="/public/dagistan-1.jpg" class="rounded-b-full" style="width: 180px;" alt="">
                         <div class="flex flex-col text-center">
                             <span class="material-symbols-outlined text-6xl">
                                 school
@@ -276,7 +274,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- about me:skills -->
     <div class="mt-20 py-4 mx-auto max-w-screen-lg">
@@ -466,9 +463,33 @@
     </div>
 
     <script>
+        let currentIndex = 0;
+        const filters = ['highschool', 'college']; // List of filter IDs
+        const buttons = [document.getElementById('highschoolBtn'), document.getElementById('collegeBtn')]; // List of filter buttons
+
+        function switchFilter() {
+            const currentFilter = filters[currentIndex];
+            const nextIndex = (currentIndex + 1) % filters.length;
+            const nextFilter = filters[nextIndex];
+
+            document.getElementById(currentFilter + '-section').style.display = 'none';
+            document.getElementById(nextFilter + '-section').style.display = 'flex';
+
+            buttons[currentIndex].classList.remove('font-bold');
+            buttons[nextIndex].classList.add('font-bold');
+
+            currentIndex = nextIndex;
+        }
+        // Initial call
+        switchFilter();
+
+        // Switch filters every 10 seconds
+        setInterval(switchFilter, 10000);
+    </script>
+    <script>
         // Get buttons
-        const collegeBtn = document.getElementById('college');
-        const highschoolBtn = document.getElementById('highschool');
+        const collegeBtn = document.getElementById('collegeBtn');
+        const highschoolBtn = document.getElementById('highschoolBtn');
 
         // Get sections
         const collegeSection = document.getElementById('college-section');

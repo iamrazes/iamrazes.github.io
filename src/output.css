@@ -852,6 +852,26 @@ video {
   margin-top: 2rem;
 }
 
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.-mt-\[160px\] {
+  margin-top: -160px;
+}
+
+.-mt-8 {
+  margin-top: -2rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -2223,6 +2243,14 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-left {
