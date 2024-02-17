@@ -734,6 +734,11 @@ video {
   margin-right: 1rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -752,16 +757,6 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .-mb-32 {
@@ -2031,10 +2026,6 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2179,6 +2170,11 @@ video {
   background-color: rgb(53 119 179 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#74C0FC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(116 192 252 / var(--tw-bg-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2197,11 +2193,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#74C0FC\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(116 192 252 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -2331,6 +2322,11 @@ video {
   padding-right: 4rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2366,14 +2362,14 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-3 {
@@ -2580,6 +2576,11 @@ video {
   color: rgb(53 119 179 / var(--tw-text-opacity));
 }
 
+.text-\[\#74C0FC\] {
+  --tw-text-opacity: 1;
+  color: rgb(116 192 252 / var(--tw-text-opacity));
+}
+
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -2593,11 +2594,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#74C0FC\] {
-  --tw-text-opacity: 1;
-  color: rgb(116 192 252 / var(--tw-text-opacity));
 }
 
 .underline {
