@@ -99,12 +99,12 @@
 
     <!-- header -->
     <div class="mx-auto max-w-screen-lg mt-12">
-        <div class="flex justify-between ">
+        <div class="flex justify-between mx-2">
             <div class="mt-12">
-                <h1 class="text-4xl">Muhammad <b>Razes</b> <br>Dagistan Silawane</h1>
-                <div class="bg-[#3577b3] w-44 h-1 mt-4"></div>
+                <h1 class="text-xl md:text-4xl">Muhammad <b>Razes</b> <br>Dagistan Silawane</h1>
+                <div class="bg-[#3577b3] w-20 md:w-44 h-1 mt-4"></div>
             </div>
-            <div class="flex flex-col text-right text-2xl gap-y-4 mt-12">
+            <div class="flex flex-col text-right text-lg md:text-2xl gap-y-4 mt-12">
                 <span class="font-bold underline underline-offset-8 text-[#3577b3]">Digital Experience</span>
                 <span><b>Fullstack Developers</b></span>
                 <span><b>Graphic Designer</b></span>
@@ -112,12 +112,12 @@
                 <span><b>UI/UX</b></span>
             </div>
         </div>
-        <div class="-mt-[170px]">
+        <div class="-mt-[100px] md:-mt-[170px]">
             <!-- <img src="/public/dagistan.png" style="height: 512px;" class="mx-auto rounded-b-full" alt="">
             <div class="bg-[#3577b3] rounded-full -mt-[382px] ml-[321px]" style="height: 382px; width: 382px;"></div> -->
-            <img src="/public/profile.png" style="height: 512px;" class="mx-auto " alt="">
+            <img src="/public/profile.png" class="mx-auto h-[300px] md:h-[512px]" alt="">
         </div>
-        <div class="flex justify-end gap-x-3 mt-8 text-[#3577b3]">
+        <div class="flex justify-center md:justify-end gap-x-3 mt-8 text-[#3577b3] mx-2">
             <a href="https://www.facebook.com/profile.php?id=100088915876783"
                 class="border transition ease-in-out border-[#3577b3] hover:text-white hover:bg-[#3577b3] p-2 text-center align-middle w-10"><i
                     class="fab fa-facebook-f"></i></a>
@@ -137,41 +137,46 @@
     </div>
 
     <!-- announcement -->
-    <div class="mt-20 bg-[#74C0FC] h-[256px] max-w-screen-md mx-auto rounded-lg">
-        <div class="flex flex-col mx-auto p-8 items-center text-white" style="font-family: Kanit;">
-            <div class="flex gap-x-4 mt-4">
-                <span>
-                    <i class="fa fa-code text-4xl"></i>
-                    
-                </span>
-                <h1 class="text-3xl font-bold">Tugas Mobile Programming 2</h1>
-                <span>
-                    
-                    <i class="fa fa-code text-4xl"></i>
-                </span>
-            </div>
-            <div class="flex flex-col mt-4 text-center">
-                <p>Progress tugas mobile programming 2 semua di semat kan pada halaman berikut berserta <br>riwayat submit penugasan setiap minggunya.</p>
-                <a href="pages/mobile-programming-2.html" class="bg-white text-[#74C0FC] py-2 mx-8 mt-2 rounded-lg font-bold hover:scale-110">Pergi Ke Halaman</a>
+    <div class="mt-10 max-w-screen-md mx-auto">
+        <div class=" bg-[#74C0FC] h-auto rounded-lg mx-2">
+            <div class="flex flex-col mx-auto py-4 px-4 text-center items-center text-white"
+                style="font-family: Kanit;">
+                <div class="flex gap-x-4 mt-4">
+                    <span>
+                        <i class="fa fa-code text-4xl"></i>
+                    </span>
+                    <h1 class="text-xl md:text-3xl align-middle font-bold">Tugas Mobile Programming 2</h1>
+                    <span>
+                        <i class="fa fa-code text-4xl"></i>
+                    </span>
+                </div>
+                <div class="flex flex-col mt-4 mb-2 text-center items-center">
+                    <p class="w-[80%] md:w-[70%]">Progress tugas mobile programming 2 semua di semat kan pada halaman
+                        berikut berserta riwayat submit penugasan setiap minggunya.</p>
+                </div>
+                <a href="pages/mobile-programming-2.html"
+                    class="bg-white text-[#74C0FC] px-8 py-2 mx-8 my-2 rounded-lg font-bold hover:scale-110">Pergi Ke
+                    Halaman</a>
             </div>
         </div>
+
     </div>
 
     <!-- about me:introduction -->
     <div class="pt-24 pb-4 -mt-8 mx-auto max-w-screen-lg" id="aboutme">
-        <h1 class="text-2xl font-bold">About Me</h1>
-        <div class="bg-[#3577b3] w-8 h-1 my-2"></div>
-        <div class="relative bg-gray-50 my-8 px-16 py-24 overflow-hidden">
-            <div class="flex">
-                <div class="flex flex-col gap-y-4">
+        <h1 class="text-2xl font-bold mx-2">About Me</h1>
+        <div class="bg-[#3577b3] w-8 h-1 my-2 mx-2"></div>
+        <div class="relative bg-gray-50 my-8 p-4 md:px-16 md:py-24 overflow-hidden">
+            <div class="flex md:flex-row flex-col">
+                <div class="flex flex-col gap-y-2 md:gap-y-4">
                     <h1 class="text-3xl font-semibold">Lorem ipsum dolor sit</h1>
-                    <p class="max-w-[512px] whitespace-normal">Lorem ipsum dolor sit amet consectetur adipisicing
+                    <p class="max-w-[512px] text-sm whitespace-normal">Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. Dicta expedita autem adipisci nulla veritatis corporis ipsam eum labore rerum cumque ad
                         itaque culpa minus nam, at repudiandae consequuntur voluptates soluta. Lorem ipsum dolor sit
                         amet consectetur adipisicing elit. Nam doloribus deleniti aut quae ad tempora nobis ex sapiente.
                         At sit ratione praesentium quo exercitationem ab quidem labore tenetur tempora quas.</p>
                 </div>
-                <div class="flex flex-col gap-y-8 mt-12 ml-16 text-sm " style="font-family: Kanit;">
+                <div class="flex flex-col md:gap-y-8 gap-y-4 mt-4 md:mt-12 md:ml-16 text-sm " style="font-family: Kanit;">
                     <a href="#" class="hover:text-blue-500"><i class="fa-regular fa-envelope align-middle "></i>
                         iamrazes.official@gmail.com</a>
                     <a href="#" class="hover:text-green-500"><i class="fa-brands fa-whatsapp align-middle "></i> +62
@@ -191,7 +196,7 @@
     </div>
 
     <!-- about me:educations -->
-    <div class="mt-6 py-4 mx-auto max-w-screen-lg">
+    <!-- <div class="mt-6 py-4 mx-auto max-w-screen-lg">
         <div class="flex">
             <div class="flex flex-col">
                 <h1 class="text-2xl font-bold w-40">Educations <br>& Experience</h1>
@@ -220,9 +225,9 @@
                     </div>
                 </div>
             </div>
-            <!-- recent -->
+            
             <div class="flex gap-x-12 ml-24" id="college-section">
-                <!-- College section content -->
+                
 
                 <div class="border shadow-lg w-72 h-[400px]">
                     <div class="flex flex-col items-center justify-between gap-y-4">
@@ -240,14 +245,12 @@
                 <div class="flex gap-x-12">
                     <div class="border w-72 h-[400px] overflow-hidden">
                         <div class="flex flex-col text-center items-center max-w-full">
-                            <!-- bg -->
+                            
                             <img src="/public/spiral.png" class="ml-60 -mt-12"
                                 style="opacity: 0.4;
                             width: 128px; 
                             filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
 
-
-                            <!-- bg -->
                             <img src="/public/spiral.png" class="mr-64 -mb-40 overflow-hidden"
                                 style="opacity: 0.4;
                             width: 258px; 
@@ -256,13 +259,12 @@
                     </div>
                     <div class="border w-72 h-[400px] overflow-hidden">
                         <div class="flex flex-col text-center items-center max-w-full">
-                            <!-- bg -->
+                            
                             <img src="/public/spiral.png" class="mr-60 left-0 mt-4"
                                 style="opacity: 0.4;
                             width: 128px; 
                             filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
 
-                            <!-- bg -->
                             <img src="/public/spiral.png" class="right-0 ml-64 -mb-32 overflow-hidden"
                                 style="opacity: 0.4;
                             width: 258px; 
@@ -271,9 +273,8 @@
                     </div>
                 </div>
             </div>
-            <!-- 2019 -->
+            
             <div class="flex gap-x-12 ml-24" id="highschool-section" style="display: none;">
-                <!-- High School section content -->
 
                 <div class="border shadow-lg w-72 h-[400px]">
                     <div class="flex flex-col items-center justify-between gap-y-4">
@@ -291,7 +292,7 @@
                 <div class="flex gap-x-12">
                     <div class="border w-72 h-[400px] overflow-hidden">
                         <div class="flex flex-col text-center items-center max-w-full">
-                            <!-- bg -->
+                            
                             <img src="/public/spiral.png" class="ml-60 -mt-12"
                                 style="opacity: 0.4;
                             width: 128px; 
@@ -303,7 +304,7 @@
                                     Indonesia</span>
                                 <span class="text-sm" style="font-family: Kanit;">2018</span>
                             </div>
-                            <!-- bg -->
+                            
                             <img src="/public/spiral.png" class="mr-64 -mb-40 overflow-hidden"
                                 style="opacity: 0.4;
                             width: 258px; 
@@ -312,7 +313,7 @@
                     </div>
                     <div class="border w-72 h-[400px] overflow-hidden">
                         <div class="flex flex-col text-center items-center max-w-full">
-                            <!-- bg -->
+                            
                             <img src="/public/spiral.png" class="mr-60 left-0 mt-4"
                                 style="opacity: 0.4;
                             width: 128px; 
@@ -326,7 +327,7 @@
                                 <span class="text-sm" style="font-family: Kanit;">Regional & Province</span>
                                 <span class="text-sm" style="font-family: Kanit;">2017</span>
                             </div>
-                            <!-- bg -->
+                            
                             <img src="/public/spiral.png" class="right-0 ml-64 -mb-32 overflow-hidden"
                                 style="opacity: 0.4;
                             width: 258px; 
@@ -336,10 +337,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- about me:skills -->
-    <div class="mt-20 py-4 mx-auto max-w-screen-lg">
+    <!-- <div class="mt-20 py-4 mx-auto max-w-screen-lg">
         <div class="flex flex-row gap-x-8 justify-center">
             <div class="mt-44">
                 <div class="flex flex-col gap-y-8">
@@ -370,10 +371,6 @@
                                 doloribus
                             </p>
                             <div class="bottom-0">
-                                <!-- <a href="#" class="font-bold text-sm text-[#3577b3]" style="font-family: Kanit;"><span
-                                        class="material-symbols-outlined text-sm align-bottom">
-                                        arrow_forward_ios
-                                    </span>Learn More</a> -->
                             </div>
                         </div>
                     </div>
@@ -454,10 +451,6 @@
                                 doloribus
                             </p>
                             <div class="bottom-0">
-                                <!-- <a href="#" class="font-bold text-sm text-[#3577b3]" style="font-family: Kanit;"><span
-                                        class="material-symbols-outlined text-sm align-bottom">
-                                        arrow_forward_ios
-                                    </span>Learn More</a> -->
                             </div>
                         </div>
                     </div>
@@ -465,39 +458,44 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- portofolio -->
     <div class="pt-24 pb-4 mx-auto max-w-screen-lg" id="portofolio">
-        <h1 class="text-2xl font-bold">Portofolio</h1>
-        <div class="bg-[#3577b3] w-8 h-1 my-2"></div>
+        <h1 class="text-2xl font-bold mx-2">Portofolio</h1>
+        <div class="bg-[#3577b3] w-8 h-1 my-2 mx-2"></div>
         <!-- button -->
-        <div class="flex justify-between uppercase py-3" style="font-family: Kanit;">
-            <div class="flex gap-x-6">
+        <div class="flex flex-col md:flex-row gap items-center md:justify-between uppercase py-3 mx-2" style="font-family: Kanit;">
+            <div class="flex flex-wrap gap-x-6 justify-center">
                 <button onclick="filterItems('category1', this)" class="bold">Website</button>
                 <button onclick="filterItems('category2', this)">Design</button>
                 <button onclick="filterItems('category3', this)">Illustration</button>
             </div>
-            <a href="projects.html" class="normal-case text-[#3577b3] hover:underline">View All My Projects Here!</a>
+            <a href="projects.html" class="normal-case mt-2 md:mt-0 text-end text-sm md:text-base text-[#3577b3] hover:underline">View All My Projects Here!</a>
             <!-- <button onclick="showAll()" data-action="show-all" id="showAllButton">Show All</button> -->
         </div>
         <!-- website -->
         <div class="overflow-x-auto mb-3" id="category1Items">
             <div class="flex items-center space-x-4 overflow-auto scrollbar-pad pb-3">
                 <a href="" class="shrink-0">
-                <img src="/public/portofolio/1.jpg" class="h-[512px] w-[332px] hover:scale-95 transition object-cover" alt="">
+                    <img src="/public/portofolio/1.jpg"
+                        class="h-[512px] w-[332px] hover:scale-95 transition object-cover" alt="">
                 </a>
                 <a href="" class="shrink-0">
-                <img src="/public/portofolio/2.jpg" class="h-[512px] w-[332px] hover:scale-95 transition object-cover" alt="">
+                    <img src="/public/portofolio/2.jpg"
+                        class="h-[512px] w-[332px] hover:scale-95 transition object-cover" alt="">
                 </a>
                 <a href="" class="shrink-0">
-                <img src="/public/portofolio/3.jpg" class="h-[512px] w-[332px] hover:scale-95 transition object-cover" alt="">
+                    <img src="/public/portofolio/3.jpg"
+                        class="h-[512px] w-[332px] hover:scale-95 transition object-cover" alt="">
                 </a>
                 <a href="" class="shrink-0">
-                <img src="/public/portofolio/2.jpg" class="h-[512px] w-[332px] hover:scale-95 transition object-cover" alt="">
+                    <img src="/public/portofolio/2.jpg"
+                        class="h-[512px] w-[332px] hover:scale-95 transition object-cover" alt="">
                 </a>
                 <a href="" class="shrink-0">
-                <img src="/public/portofolio/1.jpg" class="h-[512px] w-[332px] hover:scale-95 transition object-cover" alt="">
+                    <img src="/public/portofolio/1.jpg"
+                        class="h-[512px] w-[332px] hover:scale-95 transition object-cover" alt="">
                 </a>
             </div>
         </div>
@@ -534,26 +532,26 @@
     </div>
     <div class="max-w-screen-lg drop-shadow-2xl mx-auto z-10">
         <!-- Filter buttons top -->
-        <div class="flex gap-x-16 bg-white py-6 px-16 justify-between">
-            <img src="/public/brands/adobe-photoshop-2.svg" class="w-20 h-20 filter-button transition"
+        <div class="flex md:gap-x-16 bg-white py-6 px-16 justify-between">
+            <img src="/public/brands/adobe-photoshop-2.svg" class="md:w-20 md:h-20 w-10 h-10 filter-button transition"
                 data-target="content-1" alt="">
-            <img src="/public/brands/premiere-pro-cc.svg" class="w-20 h-20 filter-button transition"
+            <img src="/public/brands/premiere-pro-cc.svg" class="md:w-20 md:h-20 w-10 h-10 filter-button transition"
                 data-target="content-2" alt="">
-            <img src="/public/brands/visual-studio-code-1.svg" class="w-20 h-20 filter-button transition"
-                data-target="content-3" alt="">
-            <img src="/public/brands/github-icon-2.svg" class="w-20 h-20 filter-button transition"
+            <img src="/public/brands/visual-studio-code-1.svg"
+                class="md:w-20 md:h-20 w-10 h-10 filter-button transition" data-target="content-3" alt="">
+            <img src="/public/brands/github-icon-2.svg" class="md:w-20 md:h-20 w-10 h-10 filter-button transition"
                 data-target="content-4" alt="">
-            <img src="/public/brands/figma_logo.svg" class="w-20 h-20 filter-button transition" data-target="content-5"
-                alt="">
+            <img src="/public/brands/figma_logo.svg" class="md:w-20 md:h-20 w-10 h-10 filter-button transition"
+                data-target="content-5" alt="">
         </div>
     </div>
     <!-- content -->
-    <div class="bg-[#3577b3] h-[400px] relative">
+    <div class="bg-[#3577b3] h-auto relative">
         <div class="flex max-w-screen-lg mx-auto">
             <!-- Content items -->
-            <div id="content-1" class="flex content-item">
-                <div class="w-1/2 mx-4 pr-8 my-8 text-white " style="font-family: Kanit;">
-                    <h1 class="text-2xl mb-4 my-16">Adobe Photoshop</h1>
+            <div id="content-1" class="flex flex-col-reverse md:flex-row content-item">
+                <div class="md:w-1/2 mx-4 md:pr-8 my-3 md:my-8 text-white " style="font-family: Kanit;">
+                    <h1 class="text-2xl md:mb-4 my-2 md:my-16">Adobe Photoshop</h1>
                     <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci facere
                         magnam temporibus
                         natus quidem quisquam earum ratione voluptatibus! Delectus ipsam dolores explicabo nemo officiis
@@ -561,16 +559,16 @@
                         elit. Doloribus repudiandae est praesentium rem culpa error aut explicabo nemo odio, in
                         recusandae cumque amet illum, ipsum perferendis nesciunt ipsa optio repellat!</p>
                 </div>
-                <div class="w-1/2 mx-4 my-16">
+                <div class="md:w-1/2 mx-4 mt-3 md:my-16">
                     <img src="public/tools/photoshop.jpg" class="aspect-video" alt="">
                 </div>
             </div>
-            <div id="content-2" class="flex content-item hidden">
-                <div class="w-1/2 mx-4 my-16">
+            <div id="content-2" class="flex flex-col md:flex-row content-item hidden">
+                <div class="md:w-1/2 mx-4 mt-3 md:my-16">
                     <img src="public/tools/premiere.jpg" class="aspect-video" alt="">
                 </div>
-                <div class="w-1/2 mx-4 pr-8 my-8 text-white " style="font-family: Kanit;">
-                    <h1 class="text-2xl mb-4 my-16">Adobe Premiere Pro</h1>
+                <div class="md:w-1/2 mx-4 md:pr-8 my-3 md:my-8 text-white " style="font-family: Kanit;">
+                    <h1 class="text-2xl md:mb-4 my-2 md:my-16">Adobe Premiere Pro</h1>
                     <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci facere
                         magnam temporibus
                         natus quidem quisquam earum ratione voluptatibus! Delectus ipsam dolores explicabo nemo officiis
@@ -579,9 +577,9 @@
                         recusandae cumque amet illum, ipsum perferendis nesciunt ipsa optio repellat!</p>
                 </div>
             </div>
-            <div id="content-3" class="flex content-item hidden">
-                <div class="w-1/2 mx-4 pr-8 my-8 text-white " style="font-family: Kanit;">
-                    <h1 class="text-2xl mb-4 my-16">Visual Studio Code</h1>
+            <div id="content-3" class="flex flex-col-reverse md:flex-row content-item">
+                <div class="md:w-1/2 mx-4 md:pr-8 my-3 md:my-8 text-white " style="font-family: Kanit;">
+                    <h1 class="text-2xl md:mb-4 my-2 md:my-16">Visual Studio Code</h1>
                     <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci facere
                         magnam temporibus
                         natus quidem quisquam earum ratione voluptatibus! Delectus ipsam dolores explicabo nemo officiis
@@ -589,16 +587,16 @@
                         elit. Doloribus repudiandae est praesentium rem culpa error aut explicabo nemo odio, in
                         recusandae cumque amet illum, ipsum perferendis nesciunt ipsa optio repellat!</p>
                 </div>
-                <div class="w-1/2 mx-4 my-16">
+                <div class="md:w-1/2 mx-4 mt-3 md:my-16">
                     <img src="public/tools/vsc.png" class="aspect-video" alt="">
                 </div>
             </div>
-            <div id="content-4" class="flex content-item hidden">
-                <div class="w-1/2 mx-4 my-16">
-                    <img src="public/tools/github.png" class="aspect-video" alt="">
+            <div id="content-4" class="flex flex-col md:flex-row content-item hidden">
+                <div class="md:w-1/2 mx-4 mt-3 md:my-16">
+                    <img src="public/tools/figma.jpg" class="aspect-video" alt="">
                 </div>
-                <div class="w-1/2 mx-4 pr-8 my-8 text-white " style="font-family: Kanit;">
-                    <h1 class="text-2xl mb-4 my-16">GitHub</h1>
+                <div class="md:w-1/2 mx-4 md:pr-8 my-3 md:my-8 text-white " style="font-family: Kanit;">
+                    <h1 class="text-2xl md:mb-4 my-2 md:my-16">Figma</h1>
                     <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci facere
                         magnam temporibus
                         natus quidem quisquam earum ratione voluptatibus! Delectus ipsam dolores explicabo nemo officiis
@@ -607,9 +605,9 @@
                         recusandae cumque amet illum, ipsum perferendis nesciunt ipsa optio repellat!</p>
                 </div>
             </div>
-            <div id="content-5" class="flex content-item hidden">
-                <div class="w-1/2 mx-4 pr-8 my-8 text-white " style="font-family: Kanit;">
-                    <h1 class="text-2xl mb-4 my-16">Figma</h1>
+            <div id="content-5" class="flex flex-col-reverse md:flex-row content-item">
+                <div class="md:w-1/2 mx-4 md:pr-8 my-3 md:my-8 text-white " style="font-family: Kanit;">
+                    <h1 class="text-2xl md:mb-4 my-2 md:my-16">Figma</h1>
                     <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci facere
                         magnam temporibus
                         natus quidem quisquam earum ratione voluptatibus! Delectus ipsam dolores explicabo nemo officiis
@@ -617,25 +615,27 @@
                         elit. Doloribus repudiandae est praesentium rem culpa error aut explicabo nemo odio, in
                         recusandae cumque amet illum, ipsum perferendis nesciunt ipsa optio repellat!</p>
                 </div>
-                <div class="w-1/2 mx-4 my-16">
+                <div class="md:w-1/2 mx-4 mt-3 md:my-16">
                     <img src="public/tools/figma.jpg" class="aspect-video" alt="">
                 </div>
             </div>
-            <!-- Add content items for other filters similarly -->
         </div>
+        <!-- Add content items for other filters similarly -->
+    </div>
     </div>
     <div class="max-w-screen-lg drop-shadow-2xl mx-auto z-10">
         <!-- Filter buttons bottom -->
-        <div class="flex gap-x-16 bg-white py-6 px-16 justify-between">
-            <img src="/public/brands/laravel-2.svg" class="w-20 h-20 filter-button transition" data-target="content-6"
-                alt="">
-            <img src="/public/brands/tailwindcss.svg" class="w-20 h-20 filter-button transition" data-target="content-7"
-                alt="">
-            <img src="/public/brands/c-1.svg" class="w-20 h-20 filter-button transition" data-target="content-8" alt="">
-            <img src="/public/brands/logo-javascript.svg" class="w-20 h-20 filter-button transition"
+        <div class="flex md:gap-x-16 bg-white py-6 px-16 justify-between">
+            <img src="/public/brands/laravel-2.svg" class="md:w-20 md:h-20 w-10 h-10 filter-button transition"
+                data-target="content-6" alt="">
+            <img src="/public/brands/tailwindcss.svg" class="md:w-20 md:h-20 w-10 h-10 filter-button transition"
+                data-target="content-7" alt="">
+            <img src="/public/brands/c-1.svg" class="md:w-20 md:h-20 w-10 h-10 filter-button transition"
+                data-target="content-8" alt="">
+            <img src="/public/brands/logo-javascript.svg" class="md:w-20 md:h-20 w-10 h-10 filter-button transition"
                 data-target="content-9" alt="">
-            <img src="/public/brands/html-1.svg" class="w-20 h-20 filter-button transition" data-target="content-10"
-                alt="">
+            <img src="/public/brands/html-1.svg" class="md:w-20 md:h-20 w-10 h-10 filter-button transition"
+                data-target="content-10" alt="">
         </div>
     </div>
 
