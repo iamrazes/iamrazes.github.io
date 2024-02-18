@@ -32,30 +32,15 @@
             font-style: normal;
         }
 
-        .bold {
-            font-weight: bold;
+        #slider {
+            width: calc(100% + 2rem);
+            /* Adjust to accommodate gap between items */
+            transition: transform 0.5s ease;
         }
 
-        .scrollbar-pad::-webkit-scrollbar {
-            width: 10px;
-        }
-
-        .scrollbar-pad::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        .scrollbar-pad::-webkit-scrollbar-thumb {
-            background: #888;
-            border-radius: 5px;
-        }
-
-        .scrollbar-pad::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
-
-        .scrollbar-pad {
-            padding-bottom: 10px;
-            /* Adjust as needed */
+        #slider::-webkit-scrollbar {
+            display: none;
+            /* Hide scrollbar */
         }
     </style>
 </head>
@@ -97,6 +82,91 @@
         </div>
     </div>
 
+    <div class="pt-20 lg:pt-24 pb-4 mx-auto max-w-screen-lg" id="introduction" style="font-family: Kanit;">
+        <div class="flex flex-col mx-2">
+            <h1 class="text-2xl font-bold">Introduction</h1>
+            <div class="bg-[#ff851b] w-16 h-1 my-2"></div>
+        </div>
+        <div class="flex mx-2 mt-4">
+            <div class="w-1/2 ">
+                <img src="/public/mobile-programming-2/mufu-icons/logo1ob.png" class="w-96" alt="">
+            </div>
+            <div class="w-1/2">
+                <p>Mufu berasal dari kata "Multi" dan "Fungsi" atau Multifungsi, merupakan sebuah aplikasi android yang
+                    dikembangkan pada mata kuliah Mobile Programming II.</p>
+                <p class="mt-2">Repository : <b><a class="text-[#ff851b] hover:text-orange-600 transition"
+                            href="https://github.com/iamrazes/android-mufu">android-mufu</a></b></p>
+                <p>Programming Language : <b class="text-[#ff851b] ">Kotlin</b></p>
+                <p>IDE : <b class="text-[#ff851b] ">Android Studio</b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-10 lg:mt-14 pb-4 mx-auto max-w-screen-lg" id="tugas1" style="font-family: Kanit;">
+        <div class="flex flex-col mx-2">
+            <h1 class="text-2xl font-bold">Tugas 1</h1>
+            <div class="bg-[#ff851b] w-8 h-1 my-2"></div>
+            <div class="flex justify-between">
+                <p class="w-[70%] text-md">
+                    Membuat halaman SplashScreen dengan kondisi cek internet, jika ada koneksi internet
+                    lanjut ke halaman login, apabila tidak ada internet muncul dialog
+                    "Bad Connection, Try Again!" <br>
+                    Membuat halaman Login dengan data di model user, jika salah muncul dialog "Wrong username or
+                    password"
+                    dengan maximal salah 3x muncul "Reset Password" <br>
+                    Membuat Halaman Menu dan Menampilkan Halaman Menu
+
+                </p>
+                <p class="text-end">
+                    Ditugaskan pada tanggal : <b>13-02-2024</b>
+                </p>
+            </div>
+        </div>
+        <div class="mx-2 mt-2 text-lg font-bold">
+            <h2>Hasil :</h2>
+        </div>
+        <div class="overflow-x-auto mt-2 mx-2">
+            <div class="flex gap-x-6 mb-4" id="slider">
+                <div class="flex flex-col shrink-0 w-[320px]">
+                    <img src="/public/mobile-programming-2/tugas1/splashscreen.jpg" class="h-[600px] object-cover" alt="">
+                    <div class="border h-20 py-2 text-center">
+                        <span>Splash Screen</span>
+                    </div>
+                </div>
+                <div class="flex flex-col shrink-0 w-[320px]">
+                    <img src="/public/mobile-programming-2/tugas1/nointernet.jpg" class="h-[600px] object-cover" alt="">
+                    <div class="border h-20 py-2 text-center">
+                        <span>Dialog ketika tidak ada <br> koneksi internet.</span>
+                    </div>
+                </div>
+                <div class="flex flex-col shrink-0 w-[320px]">
+                    <img src="/public/mobile-programming-2/tugas1/login.jpg" class="h-[600px] object-cover"  alt="">
+                    <div class="border h-20 py-2 text-center">
+                        <span>Login</span>
+                    </div>
+                </div>
+                <div class="flex flex-col shrink-0 w-[320px]">
+                    <img src="/public/mobile-programming-2/tugas1/attempt.jpg" class="h-[600px] object-cover" alt="">
+                    <div class="border h-20 py-2 text-center">
+                        <span>Alert salah username atau password <br>saat login dengan sisa percobaan</span>
+                    </div>
+                </div>
+                <div class="flex flex-col shrink-0 w-[320px]">
+                    <img src="/public/mobile-programming-2/tugas1/resetpassword.jpg" class="h-[600px] object-cover" alt="">
+                    <div class="border h-20 py-2 text-center">
+                        <span>Dialog ketika 3x salah memasukan <br> username atau password</span>
+                    </div>
+                </div>
+                <div class="flex flex-col shrink-0 w-[320px]">
+                    <img src="/public/mobile-programming-2/tugas1/menu.jpg" class="h-[600px] object-cover" alt="">
+                    <div class="border h-20 py-2 text-center">
+                        <span>Tampila Menu setelah berhasi <br> melakukan login</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <!-- footer -->
     <div class="mx-auto text-center mt-40 bg-gray-800 text-white py-10">
@@ -108,6 +178,37 @@
     </div>
 
     <!-- Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = document.getElementById('slider');
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            slider.addEventListener('mousedown', (e) => {
+                isDown = true;
+                startX = e.pageX - slider.offsetLeft;
+                scrollLeft = slider.scrollLeft;
+            });
+
+            slider.addEventListener('mouseleave', () => {
+                isDown = false;
+            });
+
+            slider.addEventListener('mouseup', () => {
+                isDown = false;
+            });
+
+            slider.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - slider.offsetLeft;
+                const walk = (x - startX) * 2; // Adjust the sensitivity
+                slider.scrollLeft = scrollLeft - walk;
+            });
+        });
+
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const dropdownBtn = document.getElementById('dropdownBtn');
