@@ -42,6 +42,23 @@
             display: none;
             /* Hide scrollbar */
         }
+
+        .scrollbar-pad::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .scrollbar-pad::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .scrollbar-pad::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 5px;
+        }
+
+        .scrollbar-pad::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
     </style>
 </head>
 
@@ -91,10 +108,10 @@
             <div class="w-1/2 ">
                 <img src="/public/mobile-programming-2/mufu-icons/logo1ob.png" class="w-96" alt="">
             </div>
-            <div class="w-1/2 text-sm md:text-md">
-                <p >Mufu berasal dari kata "Multi" dan "Fungsi" atau Multifungsi, merupakan sebuah aplikasi android yang
+            <div class="w-1/2 text-sm md:text-lg">
+                <p>Mufu berasal dari kata "Multi" dan "Fungsi" atau Multifungsi, merupakan sebuah aplikasi android yang
                     dikembangkan pada mata kuliah Mobile Programming II.</p>
-                <p class="mt-2">Repository : <b><a class="text-[#ff851b] hover:text-orange-600 transition"
+                <p class="mt-2">Repository : <b><a class="text-[#ff851b] transition hover:underline"
                             href="https://github.com/iamrazes/android-mufu">android-mufu</a></b></p>
                 <p>Programming Language : <b class="text-[#ff851b] ">Kotlin</b></p>
                 <p>IDE : <b class="text-[#ff851b] ">Android Studio</b></p>
@@ -115,21 +132,22 @@
                     password"
                     dengan maximal salah 3x muncul "Reset Password" <br>
                     Membuat Halaman Menu dan Menampilkan Halaman Menu
-
                 </p>
                 <p class="text-start mt-2 md:mt-0">
                     Ditugaskan pada tanggal : <b>13-02-2024</b> <br>
-                    Dipublish pada branch : <b><a class="text-[#ff851b] hover:text-orange-600 transition" href="https://github.com/iamrazes/android-mufu/tree/tugas_1">tugas_1</a></b>
+                    Dipublish pada branch : <b><a class="text-[#ff851b] hover:underline transition"
+                            href="https://github.com/iamrazes/android-mufu/tree/tugas_1">tugas_1</a></b>
                 </p>
             </div>
         </div>
         <div class="mx-2 mt-2 text-lg font-bold">
             <h2>Hasil :</h2>
         </div>
-        <div class="overflow-x-auto mt-2 mx-2">
+        <div class="overflow-x-auto mt-2 mx-2 scrollbar-pad">
             <div class="flex gap-x-6 mb-4" id="slider">
                 <div class="flex flex-col shrink-0 w-[320px]">
-                    <img src="/public/mobile-programming-2/tugas1/splashscreen.jpg" class="h-[600px] object-cover" alt="">
+                    <img src="/public/mobile-programming-2/tugas1/splashscreen.jpg" class="h-[600px] object-cover"
+                        alt="">
                     <div class="border h-20 py-2 text-center">
                         <span>Splash Screen</span>
                     </div>
@@ -141,7 +159,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col shrink-0 w-[320px]">
-                    <img src="/public/mobile-programming-2/tugas1/login.jpg" class="h-[600px] object-cover"  alt="">
+                    <img src="/public/mobile-programming-2/tugas1/login.jpg" class="h-[600px] object-cover" alt="">
                     <div class="border h-20 py-2 text-center">
                         <span>Login</span>
                     </div>
@@ -153,7 +171,8 @@
                     </div>
                 </div>
                 <div class="flex flex-col shrink-0 w-[320px]">
-                    <img src="/public/mobile-programming-2/tugas1/resetpassword.jpg" class="h-[600px] object-cover" alt="">
+                    <img src="/public/mobile-programming-2/tugas1/resetpassword.jpg" class="h-[600px] object-cover"
+                        alt="">
                     <div class="border h-20 py-2 text-center">
                         <span>Dialog ketika 3x salah memasukan <br> username atau password</span>
                     </div>
