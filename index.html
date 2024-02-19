@@ -52,11 +52,7 @@
         .scrollbar-pad::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
-
-        .scrollbar-pad {
-            padding-bottom: 10px;
-            /* Adjust as needed */
-        }
+        
     </style>
 </head>
 
@@ -198,9 +194,9 @@
     </div>
 
     <!-- about me:educations -->
-    <!-- <div class="mt-6 py-4 mx-auto max-w-screen-lg">
-        <div class="flex">
-            <div class="flex flex-col">
+    <div class="mt-6 py-4 mx-auto max-w-screen-lg ">
+        <div class="flex mx-2">
+            <div class="flex flex-col mr-2 lg:mr-16">
                 <h1 class="text-2xl font-bold w-40">Educations <br>& Experience</h1>
                 <div class="flex">
                     <div class="flex">
@@ -227,119 +223,119 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="flex gap-x-12 ml-24" id="college-section">
+            <div class="flex overflow-x-auto lg:overflow-x-visible pb-8 scrollbar-pad">
+                <div class="flex gap-x-12" id="college-section">
+                    <div class="border shadow-lg w-72 h-[400px]">
+                        <div class="flex flex-col items-center justify-between gap-y-4">
+                            <img src="/public/dagistan-2.jpg" class="rounded-b-full" style="width: 180px;" alt="">
+                            <div class="flex flex-col text-center">
+                                <span class="material-symbols-outlined text-6xl">
+                                    school
+                                </span>
+                                <span class="font-semibold" style="font-family: Kanit;">University Student</span>
+                                <span class="text-sm" style="font-family: Kanit;">Computer Science Degree</span>
+                                <span class="text-sm" style="font-family: Kanit;">Universitas Putra Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-x-12">
+                        <div class="border w-72 h-[400px] overflow-hidden">
+                            <div class="flex flex-col text-center items-center max-w-full">
+                                
+                                <img src="/public/spiral.png" class="ml-60 -mt-12"
+                                    style="opacity: 0.4;
+                                width: 128px; 
+                                filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+    
+                                <img src="/public/spiral.png" class="mr-64 -mb-40 overflow-hidden"
+                                    style="opacity: 0.4;
+                                width: 258px; 
+                                filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+                            </div>
+                        </div>
+                        <div class="border w-72 h-[400px] overflow-hidden">
+                            <div class="flex flex-col text-center items-center max-w-full">
+                                
+                                <img src="/public/spiral.png" class="mr-60 left-0 mt-4"
+                                    style="opacity: 0.4;
+                                width: 128px; 
+                                filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+    
+                                <img src="/public/spiral.png" class="right-0 ml-64 -mb-32 overflow-hidden"
+                                    style="opacity: 0.4;
+                                width: 258px; 
+                                filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
-
-                <div class="border shadow-lg w-72 h-[400px]">
-                    <div class="flex flex-col items-center justify-between gap-y-4">
-                        <img src="/public/dagistan-2.jpg" class="rounded-b-full" style="width: 180px;" alt="">
-                        <div class="flex flex-col text-center">
-                            <span class="material-symbols-outlined text-6xl">
-                                school
-                            </span>
-                            <span class="font-semibold" style="font-family: Kanit;">University Student</span>
-                            <span class="text-sm" style="font-family: Kanit;">Computer Science Degree</span>
-                            <span class="text-sm" style="font-family: Kanit;">Universitas Putra Indonesia</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex gap-x-12">
-                    <div class="border w-72 h-[400px] overflow-hidden">
-                        <div class="flex flex-col text-center items-center max-w-full">
-                            
-                            <img src="/public/spiral.png" class="ml-60 -mt-12"
-                                style="opacity: 0.4;
-                            width: 128px; 
-                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
-
-                            <img src="/public/spiral.png" class="mr-64 -mb-40 overflow-hidden"
-                                style="opacity: 0.4;
-                            width: 258px; 
-                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
-                        </div>
-                    </div>
-                    <div class="border w-72 h-[400px] overflow-hidden">
-                        <div class="flex flex-col text-center items-center max-w-full">
-                            
-                            <img src="/public/spiral.png" class="mr-60 left-0 mt-4"
-                                style="opacity: 0.4;
-                            width: 128px; 
-                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
-
-                            <img src="/public/spiral.png" class="right-0 ml-64 -mb-32 overflow-hidden"
-                                style="opacity: 0.4;
-                            width: 258px; 
-                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="flex gap-x-12 ml-24" id="highschool-section" style="display: none;">
-
-                <div class="border shadow-lg w-72 h-[400px]">
-                    <div class="flex flex-col items-center justify-between gap-y-4">
-                        <img src="/public/dagistan-1.jpg" class="rounded-b-full" style="width: 180px;" alt="">
-                        <div class="flex flex-col text-center">
-                            <span class="material-symbols-outlined text-6xl">
-                                school
-                            </span>
-                            <span class="font-semibold" style="font-family: Kanit;">High School Graduate</span>
-                            <span class="text-sm" style="font-family: Kanit;">MAN 2 Cianjur</span>
-                            <span class="text-sm" style="font-family: Kanit;">2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex gap-x-12">
-                    <div class="border w-72 h-[400px] overflow-hidden">
-                        <div class="flex flex-col text-center items-center max-w-full">
-                            
-                            <img src="/public/spiral.png" class="ml-60 -mt-12"
-                                style="opacity: 0.4;
-                            width: 128px; 
-                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
-                            <img src="/public/telkom.png" class="mt-6"
-                                style="width: 128px; height: 128px; object-fit: cover;" alt="">
+                <div class="flex gap-x-12" id="highschool-section" style="display: none;">
+    
+                    <div class="border shadow-lg w-72 h-[400px]">
+                        <div class="flex flex-col items-center justify-between gap-y-4">
+                            <img src="/public/dagistan-1.jpg" class="rounded-b-full" style="width: 180px;" alt="">
                             <div class="flex flex-col text-center">
-                                <span class="font-semibold" style="font-family: Kanit;">Intern at Telkom
-                                    Indonesia</span>
-                                <span class="text-sm" style="font-family: Kanit;">2018</span>
+                                <span class="material-symbols-outlined text-6xl">
+                                    school
+                                </span>
+                                <span class="font-semibold" style="font-family: Kanit;">High School Graduate</span>
+                                <span class="text-sm" style="font-family: Kanit;">MAN 2 Cianjur</span>
+                                <span class="text-sm" style="font-family: Kanit;">2019</span>
                             </div>
-                            
-                            <img src="/public/spiral.png" class="mr-64 -mb-40 overflow-hidden"
-                                style="opacity: 0.4;
-                            width: 258px; 
-                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
                         </div>
                     </div>
-                    <div class="border w-72 h-[400px] overflow-hidden">
-                        <div class="flex flex-col text-center items-center max-w-full">
-                            
-                            <img src="/public/spiral.png" class="mr-60 left-0 mt-4"
-                                style="opacity: 0.4;
-                            width: 128px; 
-                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
-                            <span class="material-symbols-outlined text-[100px] -mt-3 text-[#3577b3] ">
-                                campaign
-                            </span>
-                            <div class="flex flex-col text-center">
-                                <span class="font-semibold" style="font-family: Kanit;">English Speech Contest</span>
-                                <span class="text-sm" style="font-family: Kanit;">1st Winner & 3rd Winner</span>
-                                <span class="text-sm" style="font-family: Kanit;">Regional & Province</span>
-                                <span class="text-sm" style="font-family: Kanit;">2017</span>
+                    <div class="flex gap-x-12">
+                        <div class="border w-72 h-[400px] overflow-hidden">
+                            <div class="flex flex-col text-center items-center max-w-full">
+                                
+                                <img src="/public/spiral.png" class="ml-60 -mt-12"
+                                    style="opacity: 0.4;
+                                width: 128px; 
+                                filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+                                <img src="/public/telkom.png" class="mt-6"
+                                    style="width: 128px; height: 128px; object-fit: cover;" alt="">
+                                <div class="flex flex-col text-center">
+                                    <span class="font-semibold" style="font-family: Kanit;">Intern at Telkom
+                                        Indonesia</span>
+                                    <span class="text-sm" style="font-family: Kanit;">2018</span>
+                                </div>
+                                
+                                <img src="/public/spiral.png" class="mr-64 -mb-40 overflow-hidden"
+                                    style="opacity: 0.4;
+                                width: 258px; 
+                                filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
                             </div>
-                            
-                            <img src="/public/spiral.png" class="right-0 ml-64 -mb-32 overflow-hidden"
-                                style="opacity: 0.4;
-                            width: 258px; 
-                            filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+                        </div>
+                        <div class="border w-72 h-[400px] overflow-hidden">
+                            <div class="flex flex-col text-center items-center max-w-full">
+                                
+                                <img src="/public/spiral.png" class="mr-60 left-0 mt-4"
+                                    style="opacity: 0.4;
+                                width: 128px; 
+                                filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+                                <span class="material-symbols-outlined text-[100px] -mt-3 text-[#3577b3] ">
+                                    campaign
+                                </span>
+                                <div class="flex flex-col text-center">
+                                    <span class="font-semibold" style="font-family: Kanit;">English Speech Contest</span>
+                                    <span class="text-sm" style="font-family: Kanit;">1st Winner & 3rd Winner</span>
+                                    <span class="text-sm" style="font-family: Kanit;">Regional & Province</span>
+                                    <span class="text-sm" style="font-family: Kanit;">2017</span>
+                                </div>
+                                
+                                <img src="/public/spiral.png" class="right-0 ml-64 -mb-32 overflow-hidden"
+                                    style="opacity: 0.4;
+                                width: 258px; 
+                                filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- about me:skills -->
     <!-- <div class="mt-20 py-4 mx-auto max-w-screen-lg">
@@ -496,7 +492,7 @@
                 </a>
                 <a href="" class="shrink-0">
                     <img src="/public/portofolio/2.jpg"
-                        class="h-72 w-40  g:h-[512px] lg:w-[332px] hover:scale-95 transition object-cover" alt="">
+                        class="h-72 w-40  lg:h-[512px] lg:w-[332px] hover:scale-95 transition object-cover" alt="">
                 </a>
                 <a href="" class="shrink-0">
                     <img src="/public/portofolio/1.jpg"
@@ -536,7 +532,6 @@
         </div>
     </div>
     <div class="max-w-screen-lg drop-shadow-2xl mx-auto z-10">
-        <!-- Filter buttons top -->
         <div class="flex md:gap-x-16 bg-white py-6 px-16 justify-between">
             <img src="/public/brands/adobe-photoshop-2.svg" class="md:w-20 md:h-20 w-10 h-10 filter-button transition"
                 data-target="content-1" alt="">
@@ -550,12 +545,9 @@
                 data-target="content-5" alt="">
         </div>
     </div>
-    <!-- content -->
     <div class="bg-[#3577b3] h-auto relative ">
         <div class="flex max-w-screen-lg mx-auto">
-            <!-- Content items -->
             <div class="mx-2">
-
                 <div id="content-1" class="flex flex-col-reverse py-2 md:flex-row content-item">
                     <div class="md:w-1/2 mx-4 md:pr-8 my-3 md:my-8 text-white " style="font-family: Kanit;">
                         <h1 class="text-2xl md:mb-4 my-2 md:my-16">Adobe Photoshop</h1>
@@ -628,10 +620,8 @@
                 </div>
             </div>
         </div>
-        <!-- Add content items for other filters similarly -->
     </div>
     <div class="max-w-screen-lg drop-shadow-2xl mx-auto z-10 ">
-        <!-- Filter buttons bottom -->
         <div class="flex md:gap-x-16 bg-white py-6 px-16 justify-between">
             <img src="/public/brands/laravel-2.svg" class="md:w-20 md:h-20 w-10 h-10 filter-button transition"
                 data-target="content-6" alt="">
