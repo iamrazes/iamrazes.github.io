@@ -1047,6 +1047,10 @@ video {
   height: auto;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-1 {
   width: 0.25rem;
 }
@@ -1696,6 +1700,10 @@ video {
        column-gap: 1.5rem;
 }
 
+.gap-y-1 {
+  row-gap: 0.25rem;
+}
+
 .gap-y-2 {
   row-gap: 0.5rem;
 }
@@ -1706,10 +1714,6 @@ video {
 
 .gap-y-4 {
   row-gap: 1rem;
-}
-
-.gap-y-1 {
-  row-gap: 0.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -3263,10 +3267,6 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:overflow-x-visible {
-    overflow-x: visible;
   }
 
   .lg\:p-4 {
