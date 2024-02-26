@@ -52,15 +52,31 @@
         .scrollbar-pad::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
+
+        .image-zoom {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-zoom img {
+            object-position: left top;
+            transition: transform 0.3s ease;
+        }
+
+        .image-zoom:hover img {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 
 <body class="antialiased">
     <!-- navbar -->
-    <div class="fixed top-0 left-0 right-0 z-50 bg-white py-2 lg:py-8 ">
+    <div class="fixed top-0 left-0 right-0 z-50 bg-white py-2 lg:py-8">
         <div class="container mx-auto flex px-2 justify-between items-center max-w-screen-lg">
             <div>
-                <a href="index.html" class="text-xl font-bold" style="font-family: Kanit;"><i class="fa fa-code align-middle"></i>
+                <a href="index.html" class="text-xl font-bold" style="font-family: Kanit;"><i
+                        class="fa fa-code align-middle"></i>
                     iamrazes</a>
             </div>
             <div class="flex items-center">
@@ -151,7 +167,8 @@
                         berikut berserta riwayat submit penugasan setiap minggunya.</p>
                 </div>
                 <a href="pages/mobile-programming-2.html"
-                    class="bg-white text-[#74C0FC] px-8 py-2 mx-8 my-2 rounded-lg font-bold hover:scale-110 transition ease-in-out">Pergi Ke
+                    class="bg-white text-[#74C0FC] px-8 py-2 mx-8 my-2 rounded-lg font-bold hover:scale-110 transition ease-in-out">Pergi
+                    Ke
                     Halaman</a>
             </div>
         </div>
@@ -165,7 +182,8 @@
             <div class="flex md:flex-row flex-col">
                 <div class="flex flex-col gap-y-2 md:gap-y-4">
                     <h1 class="text-lg md:text-3xl font-semibold">Lorem ipsum dolor sit</h1>
-                    <p class="max-w-[512px] text-sm md:text-base whitespace-normal">Lorem ipsum dolor sit amet consectetur
+                    <p class="max-w-[512px] text-sm md:text-base whitespace-normal">Lorem ipsum dolor sit amet
+                        consectetur
                         adipisicing
                         elit. Dicta expedita autem adipisci nulla veritatis corporis ipsam eum labore rerum cumque ad
                         itaque culpa minus nam, at repudiandae consequuntur voluptates soluta. Lorem ipsum dolor sit
@@ -223,7 +241,7 @@
                 </div>
             </div>
             <div class="flex overflow-x-auto xl:overflow-x-visible pb-3 md:pb-8 scrollbar-pad">
-                
+
                 <!-- 2024 -->
                 <div class="flex gap-x-12" id="college-section">
                     <div class="border shadow-lg w-60 lg:w-72 h-[400px]">
@@ -241,7 +259,7 @@
                     </div>
                     <div class="flex gap-x-12">
                         <div class="border w-60 lg:w-72 h-[400px] overflow-hidden">
-                            
+
                             <div class="flex flex-col text-center items-center max-w-full">
 
                                 <img src="/public/spiral.png" class="mr-60 left-0 mt-4"
@@ -252,8 +270,10 @@
                                     storefront
                                 </span>
                                 <div class="flex flex-col text-center">
-                                    <span class="font-semibold" style="font-family: Kanit;">Community Service Participant</span>
-                                    <span class="text-sm" style="font-family: Kanit;">Pengabdian Kepada Masyarakat</span>
+                                    <span class="font-semibold" style="font-family: Kanit;">Community Service
+                                        Participant</span>
+                                    <span class="text-sm" style="font-family: Kanit;">Pengabdian Kepada
+                                        Masyarakat</span>
                                     <span class="text-sm" style="font-family: Kanit;">as Website Developer</span>
                                     <span class="text-sm" style="font-family: Kanit;">2023</span>
                                 </div>
@@ -403,7 +423,7 @@
                                 doloribus
                             </p>
                             <div class="bottom-0">
-                                
+
                                 <a href="#" class="font-bold text-[10px] lg:text-sm text-[#3577b3]"
                                     style="font-family: Kanit;"><span
                                         class="material-symbols-outlined text-[10px] lg:text-sm align-middle">
@@ -429,7 +449,7 @@
                                 doloribus
                             </p>
                             <div class="bottom-0">
-                                
+
                                 <a href="#" class="font-bold text-[10px] lg:text-sm text-[#3577b3]"
                                     style="font-family: Kanit;"><span
                                         class="material-symbols-outlined text-[10px] lg:text-sm align-middle">
@@ -453,7 +473,7 @@
                                 doloribus
                             </p>
                             <div class="bottom-0">
-                                
+
                                 <a href="#" class="font-bold text-[10px] lg:text-sm text-[#3577b3]"
                                     style="font-family: Kanit;"><span
                                         class="material-symbols-outlined text-[10px] lg:text-sm align-middle">
@@ -502,25 +522,30 @@
         <!-- category 1 -->
         <div class="overflow-x-auto mb-3 mx-2" id="category1Items">
             <div class="flex items-center space-x-2 lg:space-x-4 overflow-auto scrollbar-pad pb-3">
-                <a href="" class="shrink-0">
-                    <img src="/public/portofolio/1.jpg"
-                        class="h-72 w-40 md:h-96 md:w-64 lg:h-[512px] lg:w-[332px] hover:scale-95 transition object-cover" alt="">
+                <a href="" class="shrink-0 image-zoom">
+                    <img src="/public/portofolio/website/artstore.jpg"
+                        class="h-72 w-40 md:h-96 md:w-64 lg:h-[512px] lg:w-[332px] transition ease-linear object-top object-cover"
+                        alt="">
                 </a>
-                <a href="" class="shrink-0">
-                    <img src="/public/portofolio/2.jpg"
-                    class="h-72 w-40 md:h-96 md:w-64 lg:h-[512px] lg:w-[332px] hover:scale-95 transition object-cover" alt="">
+                <a href="" class="shrink-0 image-zoom">
+                    <img src="/public/portofolio/website/sumanto.jpg"
+                        class="h-72 w-40 md:h-96 md:w-64 lg:h-[512px] lg:w-[332px] transition ease-linear object-top object-cover"
+                        alt="">
                 </a>
-                <a href="" class="shrink-0">
-                    <img src="/public/portofolio/3.jpg"
-                        class="h-72 w-40 md:h-96 md:w-64 lg:h-[512px] lg:w-[332px] hover:scale-95 transition object-cover" alt="">
+                <a href="" class="shrink-0 image-zoom">
+                    <img src="/public/portofolio/website/bumdescimacan.jpg"
+                        class="h-72 w-40 md:h-96 md:w-64 lg:h-[512px] lg:w-[332px] transition ease-linear object-top object-cover"
+                        alt="">
                 </a>
-                <a href="" class="shrink-0">
-                    <img src="/public/portofolio/2.jpg"
-                        class="h-72 w-40 md:h-96 md:w-64 lg:h-[512px] lg:w-[332px] hover:scale-95 transition object-cover" alt="">
+                <a href="" class="shrink-0 image-zoom">
+                    <img src="/public/portofolio/website/sukaratu.jpg"
+                        class="h-72 w-40 md:h-96 md:w-64 lg:h-[512px] lg:w-[332px] transition ease-linear object-top object-cover"
+                        alt="">
                 </a>
-                <a href="" class="shrink-0">
-                    <img src="/public/portofolio/1.jpg"
-                        class="h-72 w-40 md:h-96 md:w-64 lg:h-[512px] lg:w-[332px] hover:scale-95 transition object-cover" alt="">
+                <a href="" class="shrink-0 image-zoom">
+                    <img src="/public/portofolio/website/ecanteen.jpg"
+                        class="h-72 w-40 md:h-96 md:w-64 lg:h-[512px] lg:w-[332px] transition ease-linear object-top object-cover"
+                        alt="">
                 </a>
             </div>
         </div>
@@ -557,8 +582,8 @@
     </div>
     <div class="max-w-screen-lg drop-shadow-2xl mx-auto z-10">
         <div class="flex md:gap-x-16 bg-white py-6 px-16 justify-between">
-            <img src="/public/brands/adobe-photoshop-2.svg" class="md:w-20 md:h-20 w-10 h-10 filter-button transition scale-75"
-                data-target="content-1" alt="">
+            <img src="/public/brands/adobe-photoshop-2.svg"
+                class="md:w-20 md:h-20 w-10 h-10 filter-button transition scale-75" data-target="content-1" alt="">
             <img src="/public/brands/premiere-pro-cc.svg" class="md:w-20 md:h-20 w-10 h-10 filter-button transition"
                 data-target="content-2" alt="">
             <img src="/public/brands/visual-studio-code-1.svg"
