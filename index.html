@@ -299,8 +299,8 @@
                                     style="opacity: 0.4;
                                 width: 128px; 
                                 filter: invert(42%) sepia(8%) saturate(4051%) hue-rotate(167deg) brightness(97%) contrast(85%);" alt="">
-                                <img src="/public/telkom.png" class="mt-6"
-                                    style="width: 128px; height: 128px; object-fit: cover;" alt="">
+                                <img src="/public/telkom.svg" class="mt-6"
+                                    style="width: 128px; height: 128px; object-fit: contain;" alt="">
                                 <div class="flex flex-col text-center">
                                     <span class="font-semibold" style="font-family: Kanit;">Intern at Telkom
                                         Indonesia</span>
@@ -491,6 +491,7 @@
             style="font-family: Kanit;">
             <div class="flex flex-wrap gap-x-6 justify-center">
                 <button onclick="filterItems('category1', this)" class="bold">Website</button>
+                <button onclick="filterItems('category4', this)">Android</button>
                 <button onclick="filterItems('category2', this)">Design</button>
                 <button onclick="filterItems('category3', this)">Illustration</button>
             </div>
@@ -541,6 +542,7 @@
                 <img src="/public/portofolio/2.jpg" class="aspect-square object-cover" alt="">
             </div>
         </div>
+
         <!-- category 3 -->
         <div class="grid grid-cols-3 gap-2 md:gap-4 mx-2" id="category3Items" style="display: none;">
             <a href="" class="image-zoom">
@@ -555,6 +557,24 @@
                 <img src="/public/portofolio/illustration/NewCanvas5.jpg" class="aspect-square object-cover" alt=""></a>
             <a href="" class="image-zoom">
                 <img src="/public/portofolio/illustration/NewCanvas6.jpg" class="aspect-square object-cover" alt=""></a>
+            <a href="" class="image-zoom">
+                <img src="/public/portofolio/illustration/NewCanvas4.jpg" class="aspect-square object-cover" alt=""></a>
+            <a href="" class="image-zoom">
+                <img src="/public/portofolio/illustration/NewCanvas5.jpg" class="aspect-square object-cover" alt=""></a>
+            <a href="" class="image-zoom">
+                <img src="/public/portofolio/illustration/NewCanvas6.jpg" class="aspect-square object-cover" alt=""></a>
+        </div>
+
+        <!-- category 4 -->
+        <div class="overflow-x-auto mb-3 mx-2" id="category4Items" style="display: none;">
+            <div class="flex items-center space-x-2 lg:space-x-4 overflow-auto scrollbar-pad pb-3">
+                <a href="" class="shrink-0 image-zoom">
+                    <img src="/public/portofolio/website/artstore.jpg"
+                        class="h-72 w-40 md:h-96 md:w-64 lg:h-[512px] lg:w-[332px] transition ease-linear object-top object-cover"
+                        alt="">
+                </a>
+                
+            </div>
         </div>
     </div>
 
@@ -805,6 +825,7 @@
             document.getElementById('category1Items').style.display = 'none';
             document.getElementById('category2Items').style.display = 'none';
             document.getElementById('category3Items').style.display = 'none';
+            document.getElementById('category4Items').style.display = 'none';
 
             // Show items based on the selected category
             if (category === 'category1') {
@@ -813,6 +834,8 @@
                 document.getElementById('category2Items').style.display = 'grid';
             } else if (category === 'category3') {
                 document.getElementById('category3Items').style.display = 'grid';
+            } else if (category === 'category4') {
+                document.getElementById('category4Items').style.display = 'grid';
             }
 
             // Remove bold class from all buttons
