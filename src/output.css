@@ -1031,10 +1031,6 @@ video {
   height: 20rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .h-\[100px\] {
   height: 100px;
 }
@@ -2436,20 +2432,16 @@ video {
   padding-top: 6rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
 .pt-3 {
   padding-top: 0.75rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-left {
