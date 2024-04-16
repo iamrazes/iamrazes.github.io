@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iamrazes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="shortcut icon" href="/public/favicon.svg" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/9edda7b014.js" crossorigin="anonymous"></script>
+    <link href="/src/output.css" rel="stylesheet">
+
+    <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            /* font-size: 48px; */
+        }
+
+        .kanit-regular {
+            font-family: "Kanit", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .scrollbar-pad::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .scrollbar-pad::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .scrollbar-pad::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 5px;
+        }
+
+        .scrollbar-pad::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .scrollbar-pad {
+            padding-bottom: 10px;
+            /* Adjust as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="fixed top-0 left-0 right-0 z-50 bg-white py-2 lg:py-8 ">
+        <div class="container mx-auto flex px-2 justify-between items-center max-w-screen-lg">
+            <div>
+                <a href="/index.html" class="text-xl font-bold" style="font-family: Kanit;"><i
+                        class="fa fa-code align-middle"></i>
+                    iamrazes</a>
+            </div>
+            <div class="flex items-center">
+                <div class="hidden sm:flex flex-row gap-x-12 uppercase text-xs font-semibold"
+                    style="font-family: Kanit;">
+                    <a href="/index.html" class="hover:text-[#3577b3] ">home</a>
+                    <a href="/index.html#aboutme" class="hover:text-[#3577b3] ">about me</a>
+                    <a href="/index.html#portofolio" class="hover:text-[#3577b3] ">portofolio</a>
+                    <a href="/pages/works.html" class="hover:text-[#3577b3] ">works</a>
+                    <a href="/pages/contact.html" class="hover:text-[#3577b3] ">contact</a>
+                </div>
+                <div class="sm:hidden relative">
+                    <button id="dropdownBtn"
+                        class="flex items-center px-3 py-2   hover:text-[#3577b3] focus:outline-none"><span
+                            class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </button>
+                    <div id="dropdownMenu"
+                        class="absolute hidden bg-white py-2 mt-2 w-32 shadow-lg z-10 text-sm uppercase"
+                        style="font-family: Kanit; right: 0;">
+                        <a href="/index.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">home</a>
+                        <a href="/index.html#aboutme" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">about
+                            me</a>
+                        <a href="/index.html#portofolio"
+                            class="block px-4 py-2 text-gray-800 hover:bg-gray-200">portofolio</a>
+                        <a href="/pages/works.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">works</a>
+                        <a href="/pages/contact.html"
+                            class="block px-4 py-2 text-gray-800 hover:bg-gray-200">contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content  -->
+    <div class="mt-2 md:mt-8 lg:mt-18 mx-auto max-w-screen-lg" style="font-family: Kanit;">
+        <div class="flex flex-col mx-2">
+            <div class="flex justify-between mt-14">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl">Tugas 1</h1>
+                    <div class="w-12 mt-1 h-1 bg-primary">
+                    </div>
+                </div>
+                <div class=" pt-3">
+                    <a href="https://github.com/iamrazes/android-ConversionApp"
+                        class="hover:underline text-sm transition ease-in-out text-primary align-bottom"><i class="fa fa-github"></i>  GitHub Repositories</a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-col gap-x-4 pt-4">
+                <div class="">
+                    <h1 class="font-semibold mb-2">Android Studio & Kotlin - Conversion App</h1>
+                    <p class="text-sm md:w-1/2">
+                        Membuat splash screen dengan mengcek status koneksi internet, membuat halaman login dengan data otentikasi user dari model.<br>
+                    </p>
+                    <p class="text-sm md:w-1/2 mb-2"> 
+                        Membuat aplikasi konversi untuk suhu, jarak, massa dan waktu.</p>
+                </div>
+                <div class="flex gap-x-4 justify-center lg:pt-4">
+                    <div class="border shadow-lg" >
+                        <img src="../public/pages/tugas/conversionapp (1).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                    <div class="border shadow-lg">
+                        <img src="../public/pages/tugas/conversionapp (2).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                    <div class="border shadow-lg">
+                        <img src="../public/pages/tugas/conversionapp (3).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-col gap-x-4 pt-4">
+                </div>
+                <div class="flex gap-x-2 lg:gap-x-4 lg:pt-4 justify-center">
+                    <div class="border shadow-lg ">
+                        <img src="../public/pages/tugas/conversionapp (4).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                    <div class="border shadow-lg">
+                        <img src="../public/pages/tugas/conversionapp (5).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                    <div class="border shadow-lg">
+                        <img src="../public/pages/tugas/conversionapp (6).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                    <div class="border shadow-lg">
+                        <img src="../public/pages/tugas/conversionapp (7).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="mt-2 md:mt-4 lg:mt-8 mx-auto max-w-screen-lg" style="font-family: Kanit;">
+        <div class="flex flex-col mx-2">
+            <div class="flex justify-between mt-4">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl">Tugas 2</h1>
+                    <div class="w-12 mt-1 h-1 bg-primary">
+                    </div>
+                </div>
+                <div class=" pt-3">
+                    <a href="https://github.com/iamrazes/android-NewsApp"
+                        class="hover:underline text-sm transition ease-in-out text-primary align-bottom"><i class="fa fa-github"></i>  GitHub Repositories</a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-col gap-x-4 pt-4">
+                <div class="">
+                    <h1 class="font-semibold mb-2">Android Studio & Kotlin - News App</h1>
+                    <p class="text-sm md:w-1/2 mb-2">
+                        Membuat aplikasi berita dengan desain yang telah ditentukan dan memuat berita yang sungguh.
+                    </p>
+                </div>
+                <div class="flex gap-x-4 justify-center lg:pt-4">
+                    <div class="border shadow-lg ">
+                        <img src="../public/pages/tugas/newsapp (1).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                    <div class="border shadow-lg">
+                        <img src="../public/pages/tugas/newsapp (2).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                    <div class="border shadow-lg">
+                        <img src="../public/pages/tugas/newsapp (3).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-2 md:mt-4 lg:mt-8 mx-auto max-w-screen-lg" style="font-family: Kanit;">
+        <div class="flex flex-col mx-2">
+            <div class="flex justify-between mt-4">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl">Tugas 3</h1>
+                    <div class="w-12 mt-1 h-1 bg-primary">
+                    </div>
+                </div>
+                <div class="flex flex-col pt-3">
+                    <a href="https://github.com/iamrazes/mockup-m.tix"
+                        class="hover:underline text-sm transition ease-in-out text-primary align-bottom"><i class="fa fa-github"></i> GitHub Repositories</a>
+                    <a href="https://www.figma.com/file/gUZwBd2VXzMHRJs84LWcS5/mockup---m.tix?type=design&mode=design&t=bBfbL2nRLXQXCqYi-1"
+                        class="hover:underline text-sm transition ease-in-out text-primary align-bottom"><i class="fab fa-figma"></i> Figma</a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-col gap-x-4 pt-2">
+                <div class="">
+                    <h1 class="font-semibold mb-2">Mockup Figma - m.tix</h1>
+                    <p class="text-sm md:w-1/2 mb-2">
+                        Membuat mockup re-desain aplikasi baru dari aplikasi yang sudah ada.
+                    </p>
+                </div>
+                <div class="flex gap-x-2 lg:gap-x-4 lg:pt-4 justify-center">
+                    <div class="">
+                        <img src="../public/pages/tugas/m.tix (8).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../public/pages/tugas/m.tix (1).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../public/pages/tugas/m.tix (6).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../public/pages/tugas/m.tix (5).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                </div>
+                <div class="flex gap-x-2 lg:gap-x-4 lg:pt-4 justify-center mt-2">
+                    <div class="">
+                        <img src="../public/pages/tugas/m.tix (7).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../public/pages/tugas/m.tix (2).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../public/pages/tugas/m.tix (3).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../public/pages/tugas/m.tix (4).png" class="md:w-[236px] w-[123px]" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-2 md:mt-4 lg:mt-8 mx-auto max-w-screen-lg" style="font-family: Kanit;">
+        <div class="flex flex-col mx-2">
+            <div class="flex justify-between mt-4">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl">Tugas 4</h1>
+                    <div class="w-12 mt-1 h-1 bg-primary">
+                    </div>
+                </div>
+                <div class="flex flex-col pt-3">
+                    <a href="https://github.com/iamrazes/mockup-archive.org"
+                        class="hover:underline text-sm transition ease-in-out text-primary align-bottom"><i class="fa fa-github"></i> GitHub Repositories</a>
+                    <a href="https://www.figma.com/file/rmjZ1nP5wi3BPJBjkSRD5X/mockup--archive.org?type=design&node-id=0%3A1&mode=design&t=bBfbL2nRLXQXCqYi-1"
+                        class="hover:underline text-sm transition ease-in-out text-primary align-bottom"><i class="fab fa-figma"></i> Figma</a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-col gap-x-4 pt-2">
+                <div class="">
+                    <h1 class="font-semibold mb-2">Mockup Figma - archive.org (Internet Archive)</h1>
+                    <p class="text-sm md:w-1/2 mb-2">
+                        Membuat mockup aplikasi mobile untuk sebuah website yang tidak mempunyai aplikasi android.
+                    </p>
+                </div>
+                <div class="flex gap-x-4 justify-center lg:pt-4">
+                    <div class="">
+                        <img src="../public/pages/tugas/archive.org (6).png" class="md:w-[236px] w-[123px] border shadow rounded-xl" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../public/pages/tugas/archive.org (3).png" class="md:w-[236px] w-[123px] border shadow rounded-xl" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../public/pages/tugas/archive.org (1).png" class="md:w-[236px] w-[123px] border shadow rounded-xl" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../public/pages/tugas/archive.org (4).png" class="md:w-[236px] w-[123px] border shadow rounded-xl" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../public/pages/tugas/archive.org (5).png" class="md:w-[236px] w-[123px] border shadow rounded-xl" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-2 md:mt-4 lg:mt-8 mx-auto max-w-screen-lg" style="font-family: Kanit;">
+        <div class="flex flex-col mx-2">
+            <div class="flex justify-between mt-4">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl">Tugas 5</h1>
+                    <div class="w-12 mt-1 h-1 bg-primary">
+                    </div>
+                </div>
+                <div class="flex flex-col pt-3">
+                    <a href="https://github.com/iamrazes/mockup-mylistapp"
+                        class="hover:underline text-sm transition ease-in-out text-primary align-bottom"><i class="fa fa-github"></i> GitHub Repositories</a>
+                    <a href="https://www.figma.com/file/14NrhJqjoZvYNQSSkr8V5v/mockup---MyApps?type=design&node-id=0%3A1&mode=design&t=y3nzRlOdOkQcCeTi-1"
+                        class="hover:underline text-sm transition ease-in-out text-primary align-bottom"><i class="fab fa-figma"></i> Figma</a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-col gap-x-4 pt-2">
+                <div class="">
+                    <h1 class="font-semibold mb-2">Mockup Figma - MyListApp</h1>
+                    <p class="text-sm md:w-1/2 mb-2">
+                        Membuat mockup aplikasi mdari mobile app yang ingin dibuat.
+                    </p>
+                </div>
+                <div class="flex gap-x-4 justify-center lg:pt-4">
+                    <div class="">
+                        <img src="../public/pages/tugas/MyListApp (1).png" class="md:w-[236px] w-[123px] border shadow rounded-xl" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../public/pages/tugas/MyListApp (2).png" class="md:w-[236px] w-[123px] border shadow rounded-xl" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../public/pages/tugas/MyListApp (3).png" class="md:w-[236px] w-[123px] border shadow rounded-xl" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../public/pages/tugas/MyListApp (4).png" class="md:w-[236px] w-[123px] border shadow rounded-xl" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../public/pages/tugas/MyListApp (5).png" class="md:w-[236px] w-[123px] border shadow rounded-xl" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- footer -->
+    <div class="mx-auto text-center mt-40 bg-gray-800 text-white py-10">
+        <p class="text-sm">Made with <b><a href="https://tailwindcss.com"
+                    class="hover:text-[#74C0FC]">TailwindCSS</a></b> . Inspired from <b><a
+                    href="https://www.uplabs.com/posts/personal-portfolio-website-template-9c691996-d0b6-469f-8c32-76e8b7df7cc3"
+                    class="hover:text-[#74C0FC]">Kreativspace</a></b>
+        </p>
+    </div>
+
+    <!-- Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdownBtn = document.getElementById('dropdownBtn');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+
+            dropdownBtn.addEventListener('click', function () {
+                dropdownMenu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', function (event) {
+                const isClickInside = dropdownBtn.contains(event.target) || dropdownMenu.contains(event.target);
+                if (!isClickInside) {
+                    dropdownMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
