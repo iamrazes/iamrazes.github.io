@@ -5,18 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iamrazes</title>
-
-    <link href="src/output.css" rel="stylesheet">
-
+    <link href="/src/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/public/favicon-bright.svg">
     <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
-
-    <style>
-       
-    </style>
 </head>
 
-<body class="antialiased">
-    
+<body class="bg-gray-900 text-white antialiased">
+    <nav class="fixed top-0 z-50 w-full bg-gray-900">
+        <div class="mx-auto max-w-screen-xl flex justify-between py-6 px-2 items-center">
+            <div>
+                <a href="" class="flex items-center gap-x-3 text-3xl hover:text-red-600 transition ease-out"><img
+                        src="public/favicon.svg" class="h-10">iamrazes</a>
+            </div>
+            <div class="flex space-x-8 items-center font-mono">
+                <a class="hover:text-red-600 text-lg transition" href="#introduction">introduction</a>
+                <a class="hover:text-red-600 text-lg transition" href="#about">about</a>
+                <a class="hover:text-red-600 text-lg transition" href="#projects">projects</a>
+                <a class="hover:text-red-600 text-lg transition" href="#contact">contact</a>
+                <a class="border-2  hover:scale-105  border-red-600 rounded-xl px-4 py-2 font-bold ml-4 text-red-600  transition"
+                    href="">Hire Me</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="flex flex-col h-screen max-w-screen-xl mx-auto px-2 bg-gray-900 justify-center" id="introduction">
+        <div class="flex justify-between items-center">
+            <div class="flex flex-col gap-y-3 w-1/2">
+                <h1 class="text-6xl font-mono">Hi, I am <span class="text-red-600 ">Razes</span></h1>
+                <div class="flex flex-col gap-y-1">
+                    <h1 class="text-3xl">Programmer <span class="text-red-600">&</span> Illustrator</h1>
+                    <h1 class="text-3xl"> From Indonesia</h1>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus iusto necessitatibus odit beatae
+                    animi earum accusantium delectus nesciunt.</p>
+                <div class="flex gap-x-3 mt-4">
+                    <a href="" class="bg-red-600 rounded-xl px-4 py-2 text-lg hover:scale-95">Portofolio</a>
+                    <a href="" class="border-red-600 border text-red-600 rounded-xl px-4 py-2 text-lg hover:scale-95">Contact</a>
+                </div>
+            </div>
+            <div class="w-1/2 justify-end flex">
+                <img src="public/introduction-image.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col h-screen bg-gray-900" id="about">
+        <div class="flex flex-col mx-auto justify-center items-center max-w-screen-xl px-2">
+            
+
+        </div>
+    </div>
 
 </body>
 
