@@ -41,25 +41,19 @@
                 <a class="hover:text-red-600 text-lg transition lowercase" href="#contact">contact</a>
                 <a class="border-2  hover:bg-red-600 hover:text-white  border-red-600 rounded-xl px-4 py-2 font-bold ml-4 text-red-600  transition"
                     href="">Hire Me</a>
-                <!-- <div class="flex items-start w-4 h-4">
-                    <img src="public/moon.svg" alt="" class="moon cursor-pointer">
-                    <img src="public/sun.svg" alt="" class="sun cursor-pointer">
-                </div> -->
+                
             </div>
 
         </div>
     </nav>
 
-    <!-- <div class="flex items-start w-12 h-12 p-4 bottom-8 right-8 shadow-xl bg-gray-900 fixed rounded-full z-50 dark:bg-white"> -->
     <img src="public/moon.svg" alt=""
         class="moon cursor-pointer  w-12 h-12 p-4 bottom-8 right-8 shadow-xl bg-gray-900 fixed rounded-full z-50 dark:bg-white">
     <img src="public/sun.svg" alt=""
         class="sun cursor-pointer  w-12 h-12 p-4 bottom-8 right-8 shadow-xl bg-gray-900 fixed rounded-full z-50 dark:bg-white">
-    <!-- </div> -->
-
 
     <div id="fullpage">
-        <div class="section active" id="introduction" data-anchor="Introductions">
+        <div class="section active" data-anchor="Introductions">
 
             <div class="flex flex-col h-screen max-w-screen-xl mx-auto px-2 dark:bg-gray-900 justify-center active">
                 <div class="flex justify-between items-center">
@@ -67,25 +61,42 @@
                         <h1 class="text-6xl font-mono">Hi, I am <span class="text-red-600 ">Razes</span></h1>
                         <div class="flex flex-col gap-y-1">
                             <h1 class="text-3xl">Programmer <span class="text-red-600">&</span> Illustrator</h1>
-                            <h1 class="text-2xl">From Indonesia</h1>
+                            <h1 class="text-2xl"><span class="text-red-600">From</span> Indonesia</h1>
                         </div>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus iusto necessitatibus odit
                             beatae
                             animi earum accusantium delectus nesciunt.</p>
                         <div class="flex gap-x-3">
                             <a href="#" class=" text-red-600 text-center align-middle hover:scale-110 transition"><i
-                                    class="fab fa-facebook text-xl"></i></a>
+                                    class="fab fa-facebook text-2xl"></i></a>
                             <a href="#" class=" text-red-600 text-center align-middle hover:scale-110 transition"><i
-                                    class="fab fa-twitter text-xl"></i></a>
+                                    class="fab fa-twitter text-2xl"></i></a>
                             <a href="#" class=" text-red-600 text-center align-middle hover:scale-110 transition"><i
-                                    class="fab fa-youtube text-xl"></i></a>
+                                    class="fab fa-youtube text-2xl"></i></a>
                             <a href="#" class=" text-red-600 text-center align-middle hover:scale-110 transition"><i
-                                    class="fab fa-instagram text-xl"></i></a>
+                                    class="fab fa-instagram text-2xl"></i></a>
                             <a href="#" class=" text-red-600 text-center align-middle hover:scale-110 transition"><i
-                                    class="fab fa-github text-xl"></i></a>
+                                    class="fab fa-github text-2xl"></i></a>
                             <a href="#" class=" text-red-600 text-center align-middle hover:scale-110 transition"><i
-                                    class="fab fa-linkedin text-xl"></i></a>
+                                    class="fab fa-linkedin text-2xl"></i></a>
                         </div>
+                        <!-- <div class="flex gap-x-3">
+                            <a href="#" class=" text-blue-600 text-center align-middle hover:scale-110 transition"><i
+                                    class="fab fa-facebook text-2xl"></i></a>
+                            <a href="#" class=" text-cyan-400 text-center align-middle hover:scale-110 transition"><i
+                                    class="fab fa-twitter text-2xl"></i></a>
+                            <a href="#" class=" text-red-600 text-center align-middle hover:scale-110 transition"><i
+                                    class="fab fa-youtube text-2xl"></i></a>
+                            <a href="#" class="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 
+                                           text-transparent bg-clip-text text-center align-middle 
+                                           hover:scale-110 transition">
+                                <i class="fab fa-instagram text-2xl"></i>
+                            </a>
+                            <a href="#" class=" text-black dark:text-white text-center align-middle hover:scale-110 transition"><i
+                                    class="fab fa-github text-2xl"></i></a>
+                            <a href="#" class=" text-sky-700 text-center align-middle hover:scale-110 transition "><i
+                                    class="fab fa-linkedin text-2xl"></i></a>
+                        </div> -->
 
                         <!-- <div class="flex gap-x-3 mt-3 font-mono font-semibold">
                             <a href=""
@@ -100,7 +111,7 @@
                 </div>
             </div>
         </div>
-        <div class="section" id="about" data-anchor="About Me">
+        <div class="section" data-anchor="About Me">
             <div class="flex flex-col h-screen max-w-screen-xl mx-auto px-2 dark:bg-gray-900 justify-center">
                 <div class="flex">
                     <div class="flex flex-col">
@@ -133,7 +144,7 @@
             </div>
         </div>
 
-        <div class="section" id="projects" data-anchor="Projects">
+        <div class="section" data-anchor="Projects">
             <div class="flex flex-col h-screen max-w-screen-xl mx-auto px-2 dark:bg-gray-900 justify-center">
                 <div class="flex">
                     <div class="flex flex-col">
@@ -167,7 +178,7 @@
             navigation: true,
             scrollingSpeed: 700,
             easingcss3: 'ease-in-out',
-            anchors: ['Introduction', 'About', 'Projects'],
+            anchors: ['introduction', 'about', 'projects'],
 
         });
     </script>
