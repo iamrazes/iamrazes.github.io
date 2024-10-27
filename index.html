@@ -8,76 +8,162 @@
     <link href="/src/output.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/public/favicon-bright.svg">
     <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #fp-nav ul li a span,
+        .fp-slidesNav ul li a span {
+            background: white;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-900 text-white antialiased">
-    <nav class="fixed top-0 z-50 w-full bg-gray-900">
+<body class="bg-white dark:bg-gray-900 dark:text-white antialiased">
+    <nav class="fixed top-0 z-50 w-full bg-white dark:bg-gray-900">
         <div class="mx-auto max-w-screen-xl flex justify-between py-6 px-2 items-center">
             <div>
                 <a href="" class="flex items-center gap-x-3 text-3xl hover:text-red-600 transition ease-out"><img
                         src="public/favicon.svg" class="h-10">iamrazes</a>
             </div>
-            <div class="flex space-x-8 items-center font-mono">
-                <a class="hover:text-red-600 text-lg transition" href="#introduction">introduction</a>
-                <a class="hover:text-red-600 text-lg transition" href="#about">about</a>
-                <a class="hover:text-red-600 text-lg transition" href="#projects">projects</a>
-                <a class="hover:text-red-600 text-lg transition" href="#contact">contact</a>
-                <a class="border-2  hover:scale-105  border-red-600 rounded-xl px-4 py-2 font-bold ml-4 text-red-600  transition"
+            <div class="flex space-x-8 items-center dark:font-mono">
+                <a class="hover:text-red-600 text-lg transition lowercase" href="#introduction">introduction</a>
+                <a class="hover:text-red-600 text-lg transition lowercase" href="#about">about</a>
+                <a class="hover:text-red-600 text-lg transition lowercase" href="#projects">projects</a>
+                <a class="hover:text-red-600 text-lg transition lowercase" href="#contact">contact</a>
+                <a class="border-2  hover:bg-red-600 hover:text-white  border-red-600 rounded-xl px-4 py-2 font-bold ml-4 text-red-600  transition"
                     href="">Hire Me</a>
+                <!-- <div class="flex items-start w-4 h-4">
+                    <img src="public/moon.svg" alt="" class="moon cursor-pointer">
+                    <img src="public/sun.svg" alt="" class="sun cursor-pointer">
+                </div> -->
             </div>
 
         </div>
     </nav>
 
-    <div class="flex flex-col h-screen max-w-screen-xl mx-auto px-2 bg-gray-900 justify-center" id="introduction">
-        <div class="flex justify-between items-center">
-            <div class="flex flex-col gap-y-3 w-1/2">
-                <h1 class="text-6xl font-mono">Hi, I am <span class="text-red-600 ">Razes</span></h1>
-                <div class="flex flex-col gap-y-1">
-                    <h1 class="text-3xl">Programmer <span class="text-red-600">&</span> Illustrator</h1>
-                    <h1 class="text-3xl"> From Indonesia</h1>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus iusto necessitatibus odit beatae
-                    animi earum accusantium delectus nesciunt.</p>
-                <div class="flex gap-x-3 mt-3 font-mono font-semibold">
-                    <a href=""
-                        class="bg-red-600 rounded-xl border-2 border-red-600 px-4 py-2 text-lg hover:scale-90 transition ease-linear">Portofolio</a>
-                    <a href=""
-                        class="border-red-600 border-2 text-red-600 rounded-xl px-4 py-2 text-lg hover:scale-90 transition ease-in-out">Contact</a>
+    <!-- <div class="flex items-start w-12 h-12 p-4 bottom-8 right-8 shadow-xl bg-gray-900 fixed rounded-full z-50 dark:bg-white"> -->
+    <img src="public/moon.svg" alt=""
+        class="moon cursor-pointer  w-12 h-12 p-4 bottom-8 right-8 shadow-xl bg-gray-900 fixed rounded-full z-50 dark:bg-white">
+    <img src="public/sun.svg" alt=""
+        class="sun cursor-pointer  w-12 h-12 p-4 bottom-8 right-8 shadow-xl bg-gray-900 fixed rounded-full z-50 dark:bg-white">
+    <!-- </div> -->
+
+
+    <div id="fullpage">
+        <div class="section active" id="introduction" data-anchor="Introductions">
+
+            <div class="flex flex-col h-screen max-w-screen-xl mx-auto px-2 dark:bg-gray-900 justify-center active">
+                <div class="flex justify-between items-center">
+                    <div class="flex flex-col gap-y-3 w-1/2">
+                        <h1 class="text-6xl font-mono">Hi, I am <span class="text-red-600 ">Razes</span></h1>
+                        <div class="flex flex-col gap-y-1">
+                            <h1 class="text-3xl">Programmer <span class="text-red-600">&</span> Illustrator</h1>
+                            <h1 class="text-2xl">From Indonesia</h1>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus iusto necessitatibus odit
+                            beatae
+                            animi earum accusantium delectus nesciunt.</p>
+                        <div class="flex gap-x-3">
+                            <a href="#" class=" text-red-600 text-center align-middle hover:scale-110 transition"><i
+                                    class="fab fa-facebook text-xl"></i></a>
+                            <a href="#" class=" text-red-600 text-center align-middle hover:scale-110 transition"><i
+                                    class="fab fa-twitter text-xl"></i></a>
+                            <a href="#" class=" text-red-600 text-center align-middle hover:scale-110 transition"><i
+                                    class="fab fa-youtube text-xl"></i></a>
+                            <a href="#" class=" text-red-600 text-center align-middle hover:scale-110 transition"><i
+                                    class="fab fa-instagram text-xl"></i></a>
+                            <a href="#" class=" text-red-600 text-center align-middle hover:scale-110 transition"><i
+                                    class="fab fa-github text-xl"></i></a>
+                            <a href="#" class=" text-red-600 text-center align-middle hover:scale-110 transition"><i
+                                    class="fab fa-linkedin text-xl"></i></a>
+                        </div>
+
+                        <!-- <div class="flex gap-x-3 mt-3 font-mono font-semibold">
+                            <a href=""
+                                class="bg-red-600 rounded-xl border-2 border-red-600 px-4 py-2 text-lg hover:scale-90 transition ease-linear">Portofolio</a>
+                            <a href=""
+                                class="border-red-600 border-2 text-red-600 rounded-xl px-4 py-2 text-lg hover:scale-90 transition ease-in-out">Contact</a>
+                        </div> -->
+                    </div>
+                    <div class="w-1/2 justify-end flex">
+                        <img src="public/introduction-image.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="w-1/2 justify-end flex">
-                <img src="public/introduction-image.png" alt="">
+        </div>
+        <div class="section" id="about" data-anchor="About Me">
+            <div class="flex flex-col h-screen max-w-screen-xl mx-auto px-2 dark:bg-gray-900 justify-center">
+                <div class="flex">
+                    <div class="flex flex-col">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quibusdam repellat nostrum
+                            soluta
+                            architecto? Eum omnis temporibus veniam, accusamus tenetur, soluta reiciendis dolorum aut ab
+                            commodi
+                            aspernatur cumque unde corporis?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quidem
+                            quibusdam repellat nostrum soluta
+                            architecto? Eum omnis temporibus veniam, accusamus tenetur, soluta reiciendis dolorum aut ab
+                            commodi
+                            aspernatur cumque unde corporis?</p>
+                        <div class="text-xl">
+                            <span>Skill</span>
+                            <span>Skill</span>s
+                            <span>Skill</span>
+                            <span>Skill</span>
+                            <span>Skill</span>
+                        </div>
+                        <div class="text-xl">
+                            <span>Socials</span>
+                            <span>Socials</span>s
+                            <span>Socials</span>
+                            <span>Socials</span>
+                            <span>Socials</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="projects" data-anchor="Projects">
+            <div class="flex flex-col h-screen max-w-screen-xl mx-auto px-2 dark:bg-gray-900 justify-center">
+                <div class="flex">
+                    <div class="flex flex-col">
+                        <div class="text-xl">
+                            <span>Skill</span>
+                            <span>Skill</span>s
+                            <span>Skill</span>
+                            <span>Skill</span>
+                            <span>Skill</span>
+                        </div>
+                        <div class="text-xl">
+                            <span>Socials</span>
+                            <span>Socials</span>s
+                            <span>Socials</span>
+                            <span>Socials</span>
+                            <span>Socials</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="flex flex-col h-screen max-w-screen-xl mx-auto px-2 bg-gray-900 justify-center" id="about">
-        <div class="flex">
-            <div class="flex flex-col">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quibusdam repellat nostrum soluta
-                    architecto? Eum omnis temporibus veniam, accusamus tenetur, soluta reiciendis dolorum aut ab commodi
-                    aspernatur cumque unde corporis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-                    quibusdam repellat nostrum soluta
-                    architecto? Eum omnis temporibus veniam, accusamus tenetur, soluta reiciendis dolorum aut ab commodi
-                    aspernatur cumque unde corporis?</p>
-                <div class="text-xl">
-                    <span>Skill</span>
-                    <span>Skill</span>s
-                    <span>Skill</span>
-                    <span>Skill</span>
-                    <span>Skill</span>
-                </div>
-                <div class="text-xl">
-                    <span>Socials</span>
-                    <span>Socials</span>s
-                    <span>Socials</span>
-                    <span>Socials</span>
-                    <span>Socials</span>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true,
+            navigation: true,
+            scrollingSpeed: 700,
+            easingcss3: 'ease-in-out',
+            anchors: ['Introduction', 'About', 'Projects'],
+
+        });
+    </script>
 </body>
 
 </html>
