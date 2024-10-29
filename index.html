@@ -46,10 +46,10 @@
                         src="public/favicon.svg" class="h-10 ">iamrazes</a>
             </div>
             <div class="flex space-x-8 items-center font-mono">
-                <a class="hover:text-red-600 text-lg transition lowercase" href="#introduction">introduction</a>
-                <a class="hover:text-red-600 text-lg transition lowercase" href="#about">about</a>
-                <a class="hover:text-red-600 text-lg transition lowercase" href="#projects">projects</a>
-                <a class="hover:text-red-600 text-lg transition lowercase" href="#contact">contact</a>
+                <a class="hover:text-red-600 text-lg transition capitalize" href="#introduction">introduction</a>
+                <a class="hover:text-red-600 text-lg transition capitalize" href="#about">about</a>
+                <a class="hover:text-red-600 text-lg transition capitalize" href="#projects">projects</a>
+                <a class="hover:text-red-600 text-lg transition capitalize" href="#contact">contact</a>
                 <a class="border-2  hover:bg-red-600 hover:text-white  border-red-600 rounded-xl px-4 py-2 font-bold ml-4 text-red-600  transition ease-linear"
                     href="">Hire Me</a>
 
@@ -104,7 +104,7 @@
                             <a href=""
                                 class="bg-red-600 hover:bg-red-700 rounded-xl px-4 py-2 text-lg text-white">Portofolio</a>
                             <a href=""
-                                class="border-red-600 border-2 hover:bg-gray-100 text-red-600 rounded-xl px-4 py-2 text-lg">Contact</a>
+                                class="border-red-600 border-2 hover:bg-gray-100 dark:hover:bg-red-600 dark:hover:text-white text-red-600 rounded-xl px-4 py-2 text-lg">Contact</a>
                         </div>
                     </div>
                     <div class="w-1/2 justify-end flex">
@@ -114,18 +114,22 @@
             </div>
         </div>
 
-        <div class="section" data-anchor="About Me">
+        <div class="section mt-20" data-anchor="About Me">
             <div class="flex max-w-screen-xl h-max mx-auto px-2 justify-center">
-                <div class="flex flex-row-reverse justify-between">
-                    <div class="flex flex-col w-[40%]">
-                        <div class="flex flex-row mb-4">
+                <div class="flex flex-col lg:flex-row justify-between">
+                    <div class="flex align-middle text-centerjustify-center items-center">
+                        <img src="/public/about-image.png" alt="">
+                    </div>
+                    <div class="flex flex-col lg:w-[60%]">
+                        <div class="flex flex-row mb-4 mt-6 lg:mt-0">
                             <h1 class="text-3xl font-mono text-black dark:text-red-600">About me</h1>
                             <div class="flex ">
                                 <img src="/public/exclamation-black.svg" class="w-8 h-8" alt="">
                                 <img src="/public/exclamation-color.svg" class="w-8 h-8 dark:hidden fixed" alt="">
                             </div>
                         </div>
-                        <p class="text-lg text-black dark:text-white">My name is Muhammad Dagistan Silawane, but people
+                        <p class="lg:text-lg text-black dark:text-white">My name is Muhammad Dagistan Silawane, but
+                            people
                             call me Razes. I'm a
                             Programmer specializing on
                             web development, UI/UX, frontend and sometimes backend. I have a Bachelor Degree in
@@ -155,14 +159,11 @@
                                     class="fab fa-pixiv"></i></a>
                         </div>
                     </div>
-                    <div class="flex align-middle text-centerjustify-center items-center">
-                        <img src="/public/about-image.png" alt="">
-                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="section" data-anchor="Skills">
+        <div class="section mt-20" data-anchor="Skills">
             <div class="flex flex-col max-w-screen-xl mx-auto px-2  justify-center">
                 <div class="flex flex-row mb-8">
                     <h1 class="text-3xl text-black dark:text-red-600 font-mono">Skill & Expertise</h1>
@@ -171,38 +172,38 @@
                         <img src="/public/gear-red.svg" class="w-10 h-10 dark:hidden fixed" alt="">
                     </div> -->
                 </div>
-                <div class="grid gap-8 grid-cols-4 justify-between text-black dark:text-white">
+                <div class="grid lg:gap-8 lg:grid-cols-4 grid-cols-3 justify-between text-black dark:text-white">
 
                     <a
-                        class="flex flex-col  border border-white dark:border-red-700 hover:shadow-2xl hover:scale-105 ease-linear transition p-4 overflow-clip">
-                        <img src="/public/web-red.svg" class="w-24 h-24 mb-4">
-                        <h1 class="text-xl">Web Development</h1>
+                        class="flex flex-col  border border-white dark:border-red-700 dark:hover:shadow-rose-600 dark:hover:shadow-lg hover:shadow-2xl hover:scale-105 ease-linear transition p-4 overflow-clip">
+                        <img src="/public/web-red.svg" class="lg:w-24 w-16 h-16 lg:h-24 mb-4">
+                        <h1 class="text-base lg:text-xl mb-2">Web Development</h1>
                         <p class="text-sm ">I can create website or web application using Laravel, PHP, ReactJS.</p>
                     </a>
                     <a
-                        class="flex flex-col  border border-white dark:border-red-700 hover:shadow-2xl hover:scale-105 ease-linear transition p-4 overflow-clip">
-                        <img src="/public/pallete-red.svg" class="w-24 h-24 mb-4">
-                        <h1 class="text-xl">UI/UX</h1>
+                        class="flex flex-col  border border-white dark:border-red-700 dark:hover:shadow-rose-600 dark:hover:shadow-lg hover:shadow-2xl hover:scale-105 ease-linear transition p-4 overflow-clip">
+                        <img src="/public/pallete-red.svg" class="lg:w-24 w-16 h-16 lg:h-24 mb-4">
+                        <h1 class="text-base lg:text-xl mb-2">UI/UX</h1>
                         <p class="text-sm ">I can create design or prototype of a mobile application or web in Figma.
                         </p>
                     </a>
                     <a
-                        class="flex flex-col  border border-white dark:border-red-700 hover:shadow-2xl hover:scale-105 ease-linear transition p-4 overflow-clip">
-                        <img src="/public/video-red.svg" class="w-24 h-24 mb-4">
-                        <h1 class="text-xl">Video Editing</h1>
+                        class="flex flex-col  border border-white dark:border-red-700 dark:hover:shadow-rose-600 dark:hover:shadow-lg hover:shadow-2xl hover:scale-105 ease-linear transition p-4 overflow-clip">
+                        <img src="/public/video-red.svg" class="lg:w-24 w-16 h-16 lg:h-24 mb-4">
+                        <h1 class="text-base lg:text-xl mb-2">Video Editing</h1>
                         <p class="text-sm ">I can create and edit video using Vegas Pro, Adobe Premiere Pro and Davinci
                             Resolve.</p>
                     </a>
                     <a
-                        class="flex flex-col  border border-white dark:border-red-700 hover:shadow-2xl hover:scale-105 ease-linear transition p-4 overflow-clip">
-                        <img src="/public/officebag-red.svg" class="w-24 h-24 mb-4">
-                        <h1 class="text-xl">Administrative Assistant</h1>
+                        class="flex flex-col  border border-white dark:border-red-700 dark:hover:shadow-rose-600 dark:hover:shadow-lg hover:shadow-2xl hover:scale-105 ease-linear transition p-4 overflow-clip">
+                        <img src="/public/officebag-red.svg" class="lg:w-24 w-16 h-16 lg:h-24 mb-4">
+                        <h1 class="text-base lg:text-xl mb-2">Administrative Assistant</h1>
                         <p class="text-sm ">I can do office task using Word, Excel, Powerpoint, and Access.</p>
                     </a>
                     <a
-                        class="flex flex-col  border border-white dark:border-red-700 hover:shadow-2xl hover:scale-105 ease-linear transition p-4 overflow-clip">
-                        <img src="/public/it-red.svg" class="w-24 h-24 mb-4">
-                        <h1 class="text-xl">IT Support</h1>
+                        class="flex flex-col  border border-white dark:border-red-700 dark:hover:shadow-rose-600 dark:hover:shadow-lg hover:shadow-2xl hover:scale-105 ease-linear transition p-4 overflow-clip">
+                        <img src="/public/it-red.svg" class="lg:w-24 w-16 h-16 lg:h-24 mb-4">
+                        <h1 class="text-base lg:text-xl mb-2">IT Support</h1>
                         <p class="text-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eligendi</p>
                     </a>
 
@@ -211,14 +212,14 @@
             </div>
         </div>
 
-        <div class="section pt-28 md:pt-0" data-anchor="projects">
+        <div class="section mt-10 lg:mt-0" data-anchor="projects">
             <div class="flex flex-col max-w-screen-xl mx-auto px-2 justify-start">
                 <div class="flex flex-row mb-8 text-center justify-center">
                     <h1 class="text-3xl text-black dark:text-red-600 font-mono">Projects</h1>
                 </div>
-                <div class="mx-8 mt-4 gap-x-28 flex justify-evenly">
+                <div class="lg:mx-8 mt-4 gap-x-6 lg:gap-x-28 flex justify-evenly">
                     <a href=""
-                        class="flex flex-col justify-between border p-8 border-red-700 dark:hover:shadow-rose-600 hover:shadow-2xl transition ease-linear hover:scale-105 w-[450px] h-[550px]">
+                        class="flex flex-col justify-between border overflow-clip p-2 lg:p-8 border-red-700 dark:hover:shadow-rose-600 hover:shadow-2xl transition ease-linear hover:scale-105 w-[450px] h-[550px]">
                         <div class="flex flex-col gap-y-2">
                             <img src="/public/projects-website.png" class="w-full h-72  object-cover">
                             <h1 class="font-semibold text-xl py-3">Websites and Web Applications</h1>
@@ -230,7 +231,7 @@
                         </div>
                     </a>
                     <a href=""
-                        class="flex flex-col justify-between border p-8 border-red-700 dark:hover:shadow-rose-600 hover:shadow-2xl transition ease-linear hover:scale-105 w-[450px] h-[550px]">
+                        class="flex flex-col justify-between border overflow-clip p-2 lg:p-8 border-red-700 dark:hover:shadow-rose-600 hover:shadow-2xl transition ease-linear hover:scale-105 w-[450px] h-[550px]">
                         <div class="flex flex-col gap-y-2">
                             <img src="/public/projects-ui.png" class="w-full h-72  object-cover">
                             <h1 class="font-semibold text-xl py-3">Mockup and Designs</h1>
@@ -247,9 +248,9 @@
 
         <div class="section mt-40 md:pt-0" data-anchor="projects-2">
             <div class="flex flex-col max-w-screen-xl mx-auto px-2 justify-start">
-                <div class="mx-8 mt-4 gap-x-28 flex justify-evenly">
+                <div class="lg:mx-8 mt-4 gap-x-6 lg:gap-x-28 flex justify-evenly">
                     <a href=""
-                        class="flex flex-col justify-between border p-8 border-red-700 dark:hover:shadow-rose-600 hover:shadow-2xl transition ease-linear hover:scale-105 w-[450px] h-[550px]">
+                        class="flex flex-col justify-between border overflow-clip p-2 lg:p-8 border-red-700 dark:hover:shadow-rose-600 hover:shadow-2xl transition ease-linear hover:scale-105 w-[450px] h-[550px]">
                         <div class="flex flex-col gap-y-2">
                             <img src="/public/projects-illustrations.jpg" class="w-full h-72  object-cover">
                             <h1 class="font-semibold text-xl py-3">Illustrations</h1>
@@ -261,7 +262,7 @@
                         </div>
                     </a>
                     <a href=""
-                        class="flex flex-col justify-between border p-8 border-red-700 dark:hover:shadow-rose-600 hover:shadow-2xl transition ease-linear hover:scale-105 w-[450px] h-[550px]">
+                        class="flex flex-col justify-between border overflow-clip p-2 lg:p-8 border-red-700 dark:hover:shadow-rose-600 hover:shadow-2xl transition ease-linear hover:scale-105 w-[450px] h-[550px]">
                         <div class="flex flex-col gap-y-2">
                             <img src="/public/projects-others.png" class="w-full h-72  object-cover">
                             <h1 class="font-semibold text-xl py-3">Others</h1>
@@ -278,6 +279,18 @@
 
 
         <div class="section md:pt-0" data-anchor="contact">
+            <div class="flex flex-col max-w-screen-xl mx-auto px-2 justify-start">
+                <div class="flex flex-row">
+                    <h1 class="text-3xl mb-2 text-black dark:text-red-600 font-mono">Contacts</h1>
+                </div>
+                <p>If you are interested in working with me, please contact me at the addresses below.</p>
+                <div class="mt-20">
+                    <a href="mailto:iamrazes.official@gmail.com" class="text-red-700 text-2xl hover:text-red-500 transition-colors"> 
+                        <i class="fa fa-envelope"></i><span class="ml-4">iamrazes.official@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+
 
         </div>
 
@@ -290,10 +303,10 @@
             //options here
             autoScrolling: true,
             scrollHorizontally: true,
-            navigation: false,
+            navigation: true,
             scrollingSpeed: 700,
             easingcss3: 'ease-in-out',
-            anchors: ['introduction', 'about', 'skills', 'projects'],
+            anchors: ['introduction', 'about', 'skills', 'projects', 'projects-2', 'contact'],
         });
     </script>
 </body>
