@@ -34,6 +34,44 @@
         .dark .dark-fill {
             fill: black;
         }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+            /* Width of the scrollbar */
+            background-color: transparent;
+            /* Background color of the scrollbar track */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Color of the scrollbar thumb */
+            border-radius: 10px;
+            /* Rounded corners for the scrollbar thumb */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Darker thumb color on hover */
+        }
+
+        /* Firefox */
+        * {
+            scrollbar-width: thin;
+            /* Make scrollbar thin */
+            scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+            /* Thumb color and track color */
+        }
+
+        /* Customize hover effect for Firefox */
+        *::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Darker thumb color on hover */
+        }
+
+        .section {
+            overflow-y: auto;
+            /* Allow vertical scrolling */
+        }
     </style>
 </head>
 
@@ -49,7 +87,7 @@
                 <a class="hover:text-red-600 text-lg transition capitalize" href="#introduction">introduction</a>
                 <a class="hover:text-red-600 text-lg transition capitalize" href="#about">about</a>
                 <a class="hover:text-red-600 text-lg transition capitalize" href="#projects">projects</a>
-                <a class="hover:text-red-600 text-lg transition capitalize" href="#contact">contact</a>
+                <a class="hover:text-red-600 text-lg transition capitalize" href="#contacts">contacts</a>
                 <a class="border-2  hover:bg-red-600 hover:text-white  border-red-600 rounded-xl px-4 py-2 font-bold ml-4 text-red-600  transition ease-linear"
                     href="">Hire Me</a>
 
@@ -58,14 +96,15 @@
         </div>
     </nav>
 
+
     <img src="public/moon.svg" alt=""
         class="moon cursor-pointer  w-12 h-12 p-4 bottom-8 right-8 shadow-xl bg-gray-900 fixed rounded-full z-50 dark:bg-white transition">
     <img src="public/sun.svg" alt=""
         class="sun cursor-pointer  w-12 h-12 p-4 bottom-8 right-8 shadow-xl bg-gray-900 fixed rounded-full z-50 dark:bg-white transition">
 
     <div id="fullpage">
-        <div class="section active" data-anchor="Introductions">
-            <div class="flex flex-col h-screen max-w-screen-xl mx-auto px-2  justify-center active">
+        <div class="section active h-screen" data-anchor="introductions">
+            <div class="flex flex-col  max-w-screen-xl mx-auto px-2  justify-center active">
                 <div class="flex justify-between items-center">
                     <div class="flex flex-col gap-y-3 w-1/2">
                         <h1 class="text-6xl font-mono text-black dark:text-white">Hi, I am <span
@@ -114,8 +153,8 @@
             </div>
         </div>
 
-        <div class="section mt-20" data-anchor="About Me">
-            <div class="flex max-w-screen-xl h-max mx-auto px-2 justify-center">
+        <div class="section mt-20  h-screen " data-anchor="about">
+            <div class="flex max-w-screen-xl mx-auto px-2 justify-center">
                 <div class="flex flex-col lg:flex-row justify-between">
                     <div class="flex align-middle text-centerjustify-center items-center">
                         <img src="/public/about-image.png" alt="">
@@ -163,7 +202,7 @@
             </div>
         </div>
 
-        <div class="section mt-20" data-anchor="Skills">
+        <div class="section mt-20  h-screen " data-anchor="skills">
             <div class="flex flex-col max-w-screen-xl mx-auto px-2  justify-center">
                 <div class="flex flex-row mb-8">
                     <h1 class="text-3xl text-black dark:text-red-600 font-mono">Skill & Expertise</h1>
@@ -212,12 +251,12 @@
             </div>
         </div>
 
-        <div class="section mt-10 lg:mt-0" data-anchor="projects">
-            <div class="flex flex-col max-w-screen-xl mx-auto px-2 justify-start">
+        <div class="section  h-max-screen fp-noscroll" data-anchor="projects">
+            <div class="flex flex-col max-w-screen-xl mx-auto px-2 justify-start pt-32 ">
                 <div class="flex flex-row mb-8 text-center justify-center">
                     <h1 class="text-3xl text-black dark:text-red-600 font-mono">Projects</h1>
                 </div>
-                <div class="lg:mx-8 mt-4 gap-x-6 lg:gap-x-28 flex justify-evenly">
+                <div class="lg:mx-8 mt-4 gap-x-6 gap-y-16 lg:gap-x-28 grid grid-cols-2 justify-items-center">
                     <a href=""
                         class="flex flex-col justify-between border overflow-clip p-2 lg:p-8 border-red-700 dark:hover:shadow-rose-600 hover:shadow-2xl transition ease-linear hover:scale-105 w-[450px] h-[550px]">
                         <div class="flex flex-col gap-y-2">
@@ -242,13 +281,6 @@
                             <p class="mt-3 text-red-600"> > Learn More</p>
                         </div>
                     </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="section mt-40 md:pt-0" data-anchor="projects-2">
-            <div class="flex flex-col max-w-screen-xl mx-auto px-2 justify-start">
-                <div class="lg:mx-8 mt-4 gap-x-6 lg:gap-x-28 flex justify-evenly">
                     <a href=""
                         class="flex flex-col justify-between border overflow-clip p-2 lg:p-8 border-red-700 dark:hover:shadow-rose-600 hover:shadow-2xl transition ease-linear hover:scale-105 w-[450px] h-[550px]">
                         <div class="flex flex-col gap-y-2">
@@ -277,36 +309,48 @@
             </div>
         </div>
 
-
-        <div class="section md:pt-0" data-anchor="contact">
+        <div class="section  h-screen " data-anchor="contacts">
             <div class="flex flex-col max-w-screen-xl mx-auto px-2 justify-start">
                 <div class="flex flex-row">
-                    <h1 class="text-3xl mb-2 text-black dark:text-red-600 font-mono">Contacts</h1>
+                    <h1 class="text-3xl mb-2 text-black dark:text-red-600 font-mono">Contact</h1>
                 </div>
                 <p>If you are interested in working with me, please contact me at the addresses below.</p>
                 <div class="mt-20">
-                    <a href="mailto:iamrazes.official@gmail.com" class="text-red-700 text-2xl hover:text-red-500 transition-colors"> 
+                    <a href="mailto:iamrazes.official@gmail.com"
+                        class="text-red-700 text-2xl hover:text-red-500 transition-colors">
                         <i class="fa fa-envelope"></i><span class="ml-4">iamrazes.official@gmail.com</span>
                     </a>
                 </div>
             </div>
-
-
         </div>
-
     </div>
+
 
     <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
     <script>
         new fullpage('#fullpage', {
-            //options here
             autoScrolling: true,
             scrollHorizontally: true,
             navigation: true,
             scrollingSpeed: 700,
-            easingcss3: 'ease-in-out',
-            anchors: ['introduction', 'about', 'skills', 'projects', 'projects-2', 'contact'],
+            css3: true,
+            easingcss3: 'ease',
+
+            scrollOverflow: true,
+            scrollOverflowMacStyle: true,
+            scrollBar: true,
+            anchors: ['introduction', 'about', 'skills', 'projects', 'contacts'],
+
+            afterLoad: function (origin, destination, direction) {
+                // Disable autoScrolling when entering 'projects' section
+                if (destination.anchor === 'projects') {
+                    fullpage_api.setAutoScrolling(false);
+                    // Optional: Scroll to the bottom of the section if desired
+                    const section = document.querySelector(`.section[data-anchor="${destination.anchor}"]`);
+                    section.scrollTo(0, section.scrollHeight);
+                } 
+            },
         });
     </script>
 </body>
