@@ -2,9 +2,14 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'accent-1': '#4991EC',
+        'accent-2': '#80B8FF',
+        'accent-3': '#2E69B4',
+      },
+    },
   },
   plugins: [],
-  darkMode: 'selector',
 }
 
