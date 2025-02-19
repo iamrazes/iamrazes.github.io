@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razes</title>
+    <link href="/src/output.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Quicksand&display=swap" rel="stylesheet">
+
+    <!-- Animation on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+</head>
+
+<body class="antialiased bg-neutral-900 text-white ">
+    <nav class="py-6 px-5 lg:px-0 quicksand fixed w-full top-0 bg-neutral-900">
+        <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+            <!-- Logo -->
+            <a href="#" class="font-semibold text-2xl">Razes</a>
+
+            <div class="hidden lg:block">
+                <div class="flex gap-x-8 mt-2">
+                    <a href="" class="hover:text-accent-1">About</a>
+                    <a href="" class="hover:text-accent-1">Portofolio</a>
+                    <a href="" class="hover:text-accent-1">Projects</a>
+                    <a href="" class="hover:text-accent-1">Testimonials</a>
+
+                </div>
+            </div>
+
+            <div class="hidden lg:block">
+                <a href=""
+                    class="border rounded-lg px-4 py-3 flex gap-x-2 hover:text-accent-1 hover:border-accent-1 hidden lg:block">
+                    <i class="fa-regular fa-paper-plane pt-1"></i>
+                    <span class="font-semibold">Contact Me</span></a>
+            </div>
+
+            <!-- Hamburger Menu Button (Only Visible in Mobile) -->
+            <button id="menu-btn" class="block lg:hidden text-2xl hover:text-accent-1">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Mobile Navigation Menu (Hidden by Default) -->
+            <div id="menu"
+                class="hidden flex-col gap-y-6 absolute bg-neutral-900 top-12 left-0 w-full shadow-md p-5 resize">
+                <div class="flex flex-col text-center gap-y-4">
+                    <a href="#" class="hover:text-accent-1">About</a>
+                    <a href="#" class="hover:text-accent-1">Portfolio</a>
+                    <a href="#" class="hover:text-accent-1">Projects</a>
+                    <a href="#" class="hover:text-accent-1">Testimonials</a>
+                </div>
+                <a href="#"
+                    class="border rounded-lg px-4 py-3 flex gap-x-2 justify-center hover:text-accent-1 hover:border-accent-1 mt-4">
+                    <i class="fa-regular fa-paper-plane pt-1"></i>
+                    <span class="font-semibold">Contact Me</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-gradient-to-r from-neutral-900 mt-28 via-neutral-900 via-60% to-neutral-800 hidden lg:block">
+        <div class="flex justify-between items-center max-w-screen-xl mx-auto mt-8">
+            <div class="flex flex-col w-1/3">
+                <span class="text-xl font-semibold mb-8 quicksand">Welcome</span>
+                <h1 class="text-6xl font-bold mb-2 oswald-bold">Hi, I'm Razes</h1>
+                <h2 class="text-2xl font-semibold quicksand">Web Developer & Illustrator</h2>
+                <span class="text-xl mb-6 quicksand">From Indonesia</span>
+                <a href="" class="bg-accent-1 hover:bg-accent-3 rounded-xl px-5 py-3 flex gap-x-3 max-w-fit my-4">
+                    <i class="fa-regular fa-envelope pt-1.5 text-lg"></i>
+                    <span class="font-semibold text-lg">Hire Me</span></a>
+                <div class="flex pl-16 mt-12 items-start gap-x-4 quicksand"><i
+                        class="fa-regular fa-gem pt-2 text-sm "></i>
+                    <p class=" items-start w-full">I create multiple designs and illustrations<br>for personal or business uses
+                    </p>
+                </div>
+            </div>
+            <img src="public/header.png" class="pl-20 my-6">
+            <div class="w-1/3">
+                <div class="flex flex-col text-right gap-y-8 py-8 mr-4 text-xl">
+                    <a class="hover:text-accent-1">Web Applications</a>
+                    <a class="hover:text-accent-1">Graphic Designs</a>
+                    <a class="hover:text-accent-1">Illustrations</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" hidden lg:block">
+        <div class="flex max-w-screen-xl gap-x-4 mx-auto mt-8 items-center quicksand">
+            <h3>Follow Me:</h3>
+            <div class="flex gap-x-4">
+                <a href="#"
+                    class="rounded-full bg-neutral-800 hover:bg-neutral-700 w-10 h-10 flex items-center justify-center text-white">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#"
+                    class="rounded-full bg-neutral-800 hover:bg-neutral-700 w-10 h-10 flex items-center justify-center text-white">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#"
+                    class="rounded-full bg-neutral-800 hover:bg-neutral-700 w-10 h-10 flex items-center justify-center text-white">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#"
+                    class="rounded-full bg-neutral-800 hover:bg-neutral-700 w-10 h-10 flex items-center justify-center text-white">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#"
+                    class="rounded-full bg-neutral-800 hover:bg-neutral-700 w-10 h-10 flex items-center justify-center text-white">
+                    <i class="fa-brands fa-twitch"></i>
+                </a>
+                <a href="#"
+                    class="rounded-full bg-neutral-800 hover:bg-neutral-700 w-10 h-10 flex items-center justify-center text-white">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class=" flex flex-col mx-auto justify-center items-center mt-28 lg:hidden px-5n">
+        <img src="public/header-m.png" class="w-[300px]">
+        <div class="flex flex-col mt-8 text-center ">
+            <span class="quicksand text-lg">Hello, I'm</span>
+            <span class="text-6xl mb-3 font-bold">Razes</span>
+            <span class="text-lg font-bold text-neutral-400 quicksand-bold">Web Developer <br>& Illustrator</span>
+        </div>
+        <div class="flex gap-x-8 mt-8">
+            <a class="border hover:border-accent-1 hover:text-accent-1 rounded-full px-3 py-2">Download CV</a>
+            <a class="border hover:border-accent-1 hover:text-accent-1 rounded-full px-3 py-2">Contact Info</a>
+        </div>
+        <div class="flex gap-x-4 mt-8">
+            <a href="#"
+                class="rounded-full bg-neutral-100 hover:bg-accent-1 w-10 h-10 flex items-center justify-center text-neutral-900">
+                <i class="fa-brands fa-linkedin text-2xl"></i>
+            </a>
+            <a href="#"
+                class="rounded-full bg-neutral-100 hover:bg-accent-1 w-10 h-10 flex items-center justify-center text-neutral-900">
+                <i class="fa-brands fa-github text-2xl"></i>
+            </a>
+            <a href="#"
+                class="rounded-full bg-neutral-100 hover:bg-accent-1 w-10 h-10 flex items-center justify-center text-neutral-900">
+                <i class="fa-brands fa-telegram text-2xl"></i>
+            </a>
+            <a href="#"
+                class="rounded-full bg-neutral-100 hover:bg-accent-1 w-10 h-10 flex items-center justify-center text-neutral-900">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="flex flex-col mx-auto max-w-screen-xl justify-center text-center mt-28 gap-y-12">
+        <div class="flex flex-col gap-y-6 text-cemter items-center">
+            <h1 class="text-4xl font-bold">My Services</h1>
+            <p class="w-1/2 quicksand">Here is the list of what I can do from web develeping, graphic design to
+                illustrations.<br>I can work with big projects and wide groups or team too while still maintaining
+                professionalism. </p>
+        </div>
+        <div class="flex gap-x-4">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+    <script>
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 1024) {
+                menu.classList.add("hidden");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
