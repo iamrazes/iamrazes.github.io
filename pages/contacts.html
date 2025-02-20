@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razes - Contacts</title>
+    <link href="/src/output.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Quicksand&display=swap"
+        rel="stylesheet">
+
+    <!-- Animation on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="/public/favicon.svg" type="image/x-icon">
+
+</head>
+
+<body class="antialiased bg-neutral-900 text-white min-h-screen flex flex-col">
+    <nav class="py-6 px-5 lg:px-0 quicksand fixed w-full top-0 bg-neutral-900 z-50">
+        <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+            <!-- Logo -->
+            <a href="/index.html" class="font-semibold text-2xl">Razes</a>
+
+            <div class="hidden lg:block">
+                <div class="flex gap-x-8 mt-2">
+                    <a href="about.html" class="hover:text-accent-1">About</a>
+                    <a href="" class="hover:text-accent-1">Portofolio</a>
+                    <a href="" class="hover:text-accent-1">Projects</a>
+                    <a href="" class="hover:text-accent-1">Testimonials</a>
+
+                </div>
+            </div>
+
+            <div class="hidden lg:block">
+                <a href="contacts.html"
+                    class="border rounded-lg px-4 py-3 flex gap-x-3 hover:text-accent-1 hover:border-accent-1 hidden lg:block">
+                    <i class="fa-regular fa-paper-plane pt-1"></i>
+                    <span class="font-semibold ml-2">Contact Me</span></a>
+            </div>
+
+            <!-- Hamburger Menu Button (Only Visible in Mobile) -->
+            <button id="menu-btn" class="block lg:hidden text-2xl hover:text-accent-1">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Mobile Navigation Menu (Hidden by Default) -->
+            <div id="menu"
+                class="hidden flex-col gap-y-6 absolute bg-neutral-900 top-12 left-0 w-full shadow-md p-5 resize">
+                <div class="flex flex-col text-center gap-y-4">
+                    <a href="#" class="hover:text-accent-1">About</a>
+                    <a href="#" class="hover:text-accent-1">Portfolio</a>
+                    <a href="#" class="hover:text-accent-1">Projects</a>
+                    <a href="#" class="hover:text-accent-1">Testimonials</a>
+                </div>
+                <a href="/"
+                    class="border rounded-lg px-4 py-3 flex gap-x-2 justify-center hover:text-accent-1 hover:border-accent-1 mt-4">
+                    <i class="fa-regular fa-paper-plane pt-1"></i>
+                    <span class="font-semibold">Contact Me</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mt-36 flex-grow">
+        <div class="flex flex-col px-5 lg:px-0 quicksand  max-w-screen-xl mx-auto" data-aos="fade-up">
+
+            <h1 class="text-3xl mb-4">Contact Info</h1>
+            <p>If you are interested in working with me, you can contact me with the available links below:</p>
+            <div class="flex flex-col w-fit my-4 gap-2">
+                <a href="mailto:iamrazes.official@gmail.com" class="text-accent-1 hover:text-accent-2">
+                    <i class="fas fa-envelope"></i> <span>iamrazes.official@gmail.com</span><span class="text-white ml-4">(Business)</span>
+                </a>
+                <a href="mailto:mochdagistan@gmail.com" class="text-accent-1 hover:text-accent-2">
+                    <i class="fas fa-envelope"></i> <span>mochdagistan@gmail.com</span><span class="text-white ml-4">(Personal)</span>
+                </a>
+            </div>
+            <div class="w-full border border-neutral-600 mb-4"></div>
+            <p>You may also contact me with socials media listed below:</p>
+            <div class="flex flex-col w-fit my-4 gap-2">
+                <a href="https://discordapp.com/users/458694336779911189" class="text-accent-1 hover:text-accent-2">
+                    <i class="fab fa-discord"></i> <span>RAZES#6394</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-neutral-950 pt-10">
+        <div class="flex flex-col mx-auto max-w-screen-xl text-center">
+            <div class="flex justify-between quicksand mb-12" data-aos="fade-up">
+                <div class="flex flex-col text-left w-1/3">
+                    <span class="text-accent-1 text-lg mb-2">Pages</span>
+                    <a href="" class="hover:text-accent-1">About</a>
+                    <a href="" class="hover:text-accent-1">Contacts</a>
+                    <a href="" class="hover:text-accent-1">Portfolio</a>
+                    <a href="" class="hover:text-accent-1">Projects</a>
+                </div>
+                <div class="flex flex-col text-center w-1/3">
+                    <span class="text-accent-1 text-lg mb-2">Services</span>
+                    <a href="" class="hover:text-accent-1">Web Applications</a>
+                    <a href="" class="hover:text-accent-1">Graphic Designs</a>
+                    <a href="" class="hover:text-accent-1">Illustrations</a>
+                </div>
+                <div class="flex flex-col text-right w-1/3">
+                    <span class="text-accent-1 text-lg mb-2">Connect with me</span>
+                    <span class="text-neutral-400">Muhammad Dagistan Silawane (Razes)</span>
+                    <a href="" class="hover:text-accent-1">iamrazes.official@gmail.com</a>
+                </div>
+            </div>
+            <h1 class="my-2 uppercase quicksand text-sm">Copyright © 2025 Razes</h1>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
+</body>
+
+</html>
