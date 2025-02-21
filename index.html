@@ -13,17 +13,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Quicksand&display=swap"
         rel="stylesheet">
-
     <!-- Animation on Scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="shortcut icon" href="/public/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/icons/favicon.svg" type="image/x-icon">
 
 </head>
 
-<body class="antialiased bg-neutral-900 text-white ">
-    <nav class="py-6 px-5 lg:px-0 quicksand fixed w-full top-0 bg-neutral-900 z-50">
+<body class="antialiased bg-base-1 text-white ">
+    <nav class="py-6 px-5 xl:px-0 quicksand fixed w-full top-0 bg-base-1 z-50">
         <div class="flex justify-between items-center max-w-screen-xl mx-auto">
             <!-- Logo -->
             <a href="/" class="font-semibold text-2xl">Razes</a>
@@ -31,9 +30,9 @@
             <div class="hidden lg:block ">
                 <div class="flex gap-x-8 mt-2">
                     <a href="pages/about.html" class="hover:text-accent-1 transition-all">About</a>
-                    <a href="" class="hover:text-accent-1 transition-all">Portofolio</a>
-                    <a href="" class="hover:text-accent-1 transition-all">Projects</a>
-                    <a href="" class="hover:text-accent-1 transition-all">Testimonials</a>
+                    <a href="pages/projects.html" class="hover:text-accent-1 transition-all">Projects</a>
+                    <a href="portofolio.html" class="hover:text-accent-1 transition-all">Portofolio</a>
+                    <a href="pages/articles.html" class="hover:text-accent-1 transition-all">Articles</a>
 
                 </div>
             </div>
@@ -52,12 +51,12 @@
 
             <!-- Mobile Navigation Menu (Hidden by Default) -->
             <div id="menu"
-                class="hidden flex-col gap-y-6 absolute bg-neutral-900 top-12 left-0 w-full shadow-md p-5 resize">
+                class="hidden flex-col gap-y-6 absolute bg-base-1 top-12 left-0 w-full shadow-md p-5 resize">
                 <div class="flex flex-col text-center gap-y-4">
                     <a href="#" class="hover:text-accent-1">About</a>
-                    <a href="#" class="hover:text-accent-1">Portfolio</a>
                     <a href="#" class="hover:text-accent-1">Projects</a>
-                    <a href="#" class="hover:text-accent-1">Testimonials</a>
+                    <a href="#" class="hover:text-accent-1">Portfolio</a>
+                    <a href="#" class="hover:text-accent-1">Articles</a>
                 </div>
                 <a href="#"
                     class="border rounded-lg px-4 py-3 flex gap-x-2 justify-center hover:text-accent-1 hover:border-accent-1 mt-4">
@@ -69,111 +68,116 @@
     </nav>
 
     <!-- Header -->
-    <div class="bg-gradient-to-r from-neutral-900 mt-36 via-neutral-900 via-60% to-neutral-800 hidden lg:block"
-        data-aos="fade-up">
-        <div class="flex justify-between items-center max-w-screen-xl mx-auto mt-8">
-            <div class="flex flex-col w-1/3">
-                <span class="text-xl font-semibold mb-8 quicksand">Welcome</span>
-                <h1 class="text-6xl font-bold mb-2 oswald-bold">Hi, I'm Razes</h1>
-                <h2 class="text-2xl font-semibold quicksand">Web Developer & Illustrator</h2>
-                <span class="text-xl mb-6 quicksand">From Indonesia</span>
-                <a href="pages/contacts.html"
-                    class="bg-accent-1 hover:bg-accent-3 rounded-xl px-5 py-3 flex gap-x-3 max-w-fit my-4 transition-all">
-                    <i class="fa-regular fa-envelope pt-1.5 text-lg"></i>
-                    <span class="font-semibold text-lg">Hire Me</span></a>
-                <div class="flex pl-16 mt-12 items-start gap-x-4 quicksand"><i
-                        class="fa-regular fa-gem pt-2 text-sm "></i>
-                    <p class=" items-start w-full">I create multiple designs and illustrations<br>for personal or
-                        business uses
-                    </p>
+    <div class="flex flex-col mt-36" data-aos="fade-up">
+
+        <div class="bg-gradient-to-r from-base-1 via-base-1 via-60% to-base-6 hidden lg:block">
+            <div class="flex justify-between items-center max-w-screen-xl mx-auto mt-8">
+                <div class="flex flex-col w-1/3">
+                    <span class="text-xl font-semibold mb-8 quicksand">Welcome</span>
+                    <h1 class="text-6xl font-bold mb-2 oswald-bold">Hi, I'm Razes</h1>
+                    <h2 class="text-2xl font-semibold quicksand">Web Developer & Illustrator</h2>
+                    <span class="text-xl mb-6 quicksand">From Indonesia</span>
+                    <a href="pages/contacts.html"
+                        class="bg-accent-1 hover:bg-accent-3 rounded-xl px-5 py-3 flex gap-x-3 max-w-fit my-4 transition-all">
+                        <i class="fa-regular fa-envelope pt-1.5 text-lg"></i>
+                        <span class="font-semibold text-lg">Hire Me</span></a>
+                    <div class="flex pl-16 mt-12 items-start gap-x-4 quicksand"><i
+                            class="fa-regular fa-gem pt-2 text-sm "></i>
+                        <p class=" items-start w-full">I create multiple designs and illustrations<br>for personal or
+                            business uses
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <img src="public/header.png" class="pl-20 my-8">
-            <div class="w-1/3 items-end justify-end flex">
-                <div class="flex flex-col text-right items-end gap-y-8 py-8 mr-4 text-xl w-fit ">
-                    <a class="hover:text-accent-1 transition-all ">Web Applications</a>
-                    <a class="hover:text-accent-1 transition-all">Graphic Designs</a>
-                    <a class="hover:text-accent-1 transition-all">Illustrations</a>
+                <div class="2-1/3">
+                    <img src="public/header.png" class="pl-8 my-8">
+                </div>
+                <div class="flex text-end justify-end quicksand w-1/3">
+                    <div class="flex flex-col text-right justify-end items-end gap-y-8 py-8 text-2xl w-fit">
+                        <a class="hover:text-accent-1 transition-all">Web Applications</a>
+                        <a class="hover:text-accent-1 transition-all">Graphic Designs</a>
+                        <a class="hover:text-accent-1 transition-all">Illustrations</a>
+                        <!-- <a class="hover:text-accent-1 transition-all">UI/UX</a> -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class=" hidden lg:block">
-        <div class="flex max-w-screen-xl gap-x-4 mx-auto mt-8 items-center quicksand">
-            <h3>Follow Me:</h3>
-            <div class="flex gap-x-4">
-                <a href="#"
-                    class="rounded-full bg-neutral-800 hover:bg-neutral-700 w-10 h-10 flex items-center justify-center text-white">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="#"
-                    class="rounded-full bg-neutral-800 hover:bg-neutral-700 w-10 h-10 flex items-center justify-center text-white">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="#"
-                    class="rounded-full bg-neutral-800 hover:bg-neutral-700 w-10 h-10 flex items-center justify-center text-white">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a href="#"
-                    class="rounded-full bg-neutral-800 hover:bg-neutral-700 w-10 h-10 flex items-center justify-center text-white">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#"
-                    class="rounded-full bg-neutral-800 hover:bg-neutral-700 w-10 h-10 flex items-center justify-center text-white">
-                    <i class="fa-brands fa-twitch"></i>
-                </a>
-                <a href="#"
-                    class="rounded-full bg-neutral-800 hover:bg-neutral-700 w-10 h-10 flex items-center justify-center text-white">
-                    <i class="fa-brands fa-discord"></i>
-                </a>
+        <div class=" hidden lg:block">
+            <div class="flex max-w-screen-xl gap-x-4 mx-auto mt-8 items-center quicksand">
+                <h3>Follow Me:</h3>
+                <div class="flex gap-x-4">
+                    <a href="#"
+                        class="rounded-full bg-base-6 hover:bg-base-5 w-10 h-10 flex items-center justify-center text-white">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#"
+                        class="rounded-full bg-base-6 hover:bg-base-5 w-10 h-10 flex items-center justify-center text-white">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="rounded-full bg-base-6 hover:bg-base-5 w-10 h-10 flex items-center justify-center text-white">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#"
+                        class="rounded-full bg-base-6 hover:bg-base-5 w-10 h-10 flex items-center justify-center text-white">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="rounded-full bg-base-6 hover:bg-base-5 w-10 h-10 flex items-center justify-center text-white">
+                        <i class="fa-brands fa-twitch"></i>
+                    </a>
+                    <a href="#"
+                        class="rounded-full bg-base-6 hover:bg-base-5 w-10 h-10 flex items-center justify-center text-white">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Header Mobile -->
-    <div class=" flex flex-col mx-auto justify-center items-center mt-28 lg:hidden px-5n">
+    <div class=" flex flex-col mx-auto justify-center items-center mt-28 lg:hidden px-5">
         <img src="public/header-m.png" class="w-[300px]">
         <div class="flex flex-col mt-8 text-center ">
             <span class="quicksand text-lg quicksand-bold">Hello, I'm</span>
             <span class="text-6xl mb-3 font-bold">Razes</span>
-            <span class="text-lg font-bold text-neutral-400 quicksand-bold">Web Developer <br>& Illustrator</span>
+            <span class="text-lg font-bold text-base-3 quicksand-bold">Web Developer <br>& Illustrator</span>
         </div>
         <div class="flex gap-x-8 mt-8">
-            <a class="border hover:border-accent-1 hover:text-accent-1 rounded-full px-3 py-2">Download CV</a>
-            <a class="border hover:border-accent-1 hover:text-accent-1 rounded-full px-3 py-2">Contact Info</a>
+            <a class="border hover:border-accent-1 hover:text-accent-1 rounded-full px-3 py-2">Portofolio</a>
+            <a class="border hover:border-accent-1 hover:text-accent-1 rounded-full px-3 py-2">Contact</a>
         </div>
         <div class="flex gap-x-4 mt-8">
             <a href="#"
-                class="rounded-full bg-neutral-100 hover:bg-accent-1 w-10 h-10 flex items-center justify-center text-neutral-900">
+                class="rounded-full bg-base-7 hover:bg-accent-1 w-10 h-10 flex items-center justify-center text-base-1">
                 <i class="fa-brands fa-linkedin text-2xl"></i>
             </a>
             <a href="#"
-                class="rounded-full bg-neutral-100 hover:bg-accent-1 w-10 h-10 flex items-center justify-center text-neutral-900">
+                class="rounded-full bg-base-7 hover:bg-accent-1 w-10 h-10 flex items-center justify-center text-base-1">
                 <i class="fa-brands fa-github text-2xl"></i>
             </a>
             <a href="#"
-                class="rounded-full bg-neutral-100 hover:bg-accent-1 w-10 h-10 flex items-center justify-center text-neutral-900">
+                class="rounded-full bg-base-7 hover:bg-accent-1 w-10 h-10 flex items-center justify-center text-base-1">
                 <i class="fa-brands fa-telegram text-2xl"></i>
             </a>
             <a href="#"
-                class="rounded-full bg-neutral-100 hover:bg-accent-1 w-10 h-10 flex items-center justify-center text-neutral-900">
+                class="rounded-full bg-base-7 hover:bg-accent-1 w-10 h-10 flex items-center justify-center text-base-1">
                 <i class="fa-brands fa-whatsapp text-2xl"></i>
             </a>
         </div>
     </div>
 
     <!-- Services -->
-    <div class="flex flex-col mx-auto max-w-screen-xl justify-center items-center text-center mt-36 gap-y-12">
+    <div class="flex flex-col mx-auto max-w-screen-xl justify-center items-center text-center mt-36 gap-y-12" data-aos="fade-up">
         <div class="flex flex-col gap-y-6 text-center items-center">
             <h1 class="text-4xl font-bold">My Services</h1>
             <p class="quicksand">Here is the list of what I can do from web develeping, graphic design to
                 illustrations.<br>I can work with big projects and wide groups or team too while still maintaining
                 professionalism. </p>
         </div>
-        <div class="flex flex-col gap-y-10" data-aos="fade-up">
+        <div class="flex flex-col gap-y-10" >
             <div class="flex gap-x-4 justify-center">
                 <a href=""
-                    class="bg-neutral-800 rounded-xl shadow-sm p-6 w-[70%] flex justify-between items-center border border-transparent hover:border-accent-1 hover:scale-95 transition-all ease-out">
+                    class="bg-base-6 rounded-xl shadow-sm p-6 w-[70%] flex justify-between items-center border border-transparent hover:border-accent-1 hover:scale-95 transition-all ease-out">
                     <div class="flex flex-col text-accent-1 text-left gap-y-3 w-[30%]">
                         <i class="fas fa-globe text-3xl"></i>
                         <span>Web Development</span>
@@ -186,7 +190,7 @@
 
             <div class="flex gap-x-4 justify-center">
                 <a href=""
-                    class="bg-neutral-800 rounded-xl shadow-sm p-6 w-[70%] flex justify-between items-center border border-transparent hover:border-accent-1 hover:scale-95 transition-all ease-out">
+                    class="bg-base-6 rounded-xl shadow-sm p-6 w-[70%] flex justify-between items-center border border-transparent hover:border-accent-1 hover:scale-95 transition-all ease-out">
                     <div class="flex flex-col text-accent-1 text-left gap-y-3 w-[30%]">
                         <i class="fa-solid fa-object-group text-3xl"></i>
                         <span>Graphic Design</span>
@@ -198,7 +202,7 @@
             </div>
             <div class="flex gap-x-4 justify-center">
                 <a href=""
-                    class="bg-neutral-800 rounded-xl shadow-sm p-6 w-[70%] flex justify-between items-center border border-transparent hover:border-accent-1 hover:scale-95 transition-all ease-out">
+                    class="bg-base-6 rounded-xl shadow-sm p-6 w-[70%] flex justify-between items-center border border-transparent hover:border-accent-1 hover:scale-95 transition-all ease-out">
                     <div class="flex flex-col text-accent-1 text-left gap-y-3 w-[30%]">
                         <i class="fa-solid fa-palette text-3xl"></i>
                         <span>Illustrations</span>
@@ -211,34 +215,64 @@
         </div>
     </div>
 
-    <!-- Recent Works -->
-    <div class="mt-44 bg-neutral-800 py-8">
+    <!-- Recent Works v2 -->
+    <div class="w-full mt-44 bg-base-6 py-14" data-aos="fade-up">
+        <div class="flex flex-col max-w-screen-xl mx-auto">
+            <div class="flex flex-col gap-y-6 w-full">
+                <div class="flex justify-between">
+                    <h1 class="text-3xl font-bold">My Recent Works</h1>
+                    <div>
+                        <button data-filter="all"
+                            class="filter-btn border border-base-3 hover:border-accent-1 px-3 py-1 hover:text-accent-1 rounded-l-full transition-all">
+                            All
+                        </button>
+                        <button data-filter="recentWebApplications"
+                            class="filter-btn border border-base-3 hover:border-accent-1 px-3 py-1 hover:text-accent-1 transition-all">
+                            Web Applications
+                        </button>
+                        <button data-filter="recentGraphicDesigns"
+                            class="filter-btn border border-base-3 hover:border-accent-1 px-3 py-1 hover:text-accent-1 transition-all">
+                            Graphic Design
+                        </button>
+                        <button data-filter="recentIllustrations"
+                            class="filter-btn border border-base-3 hover:border-accent-1 px-3 py-1 hover:text-accent-1 rounded-r-full transition-all">
+                            Illustrations
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex ">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Works v1 -->
+    <!-- <div class="mt-44 bg-base-6 py-8">
         <div class="max-w-screen-xl mx-auto">
             <div class="flex flex-col py-8">
                 <div class="flex justify-between">
                     <h2 class="text-2xl font-semibold">My recent works:</h2>
                     <div>
                         <button data-filter="all"
-                            class="filter-btn border border-neutral-500 hover:border-accent-1 px-3 py-1 hover:text-accent-1 rounded-l-full transition-all">
+                            class="filter-btn border border-base-3 hover:border-accent-1 px-3 py-1 hover:text-accent-1 rounded-l-full transition-all">
                             All
                         </button>
                         <button data-filter="recentWebApplications"
-                            class="filter-btn border border-neutral-500 hover:border-accent-1 px-3 py-1 hover:text-accent-1 transition-all">
+                            class="filter-btn border border-base-3 hover:border-accent-1 px-3 py-1 hover:text-accent-1 transition-all">
                             Web Applications
                         </button>
                         <button data-filter="recentGraphicDesigns"
-                            class="filter-btn border border-neutral-500 hover:border-accent-1 px-3 py-1 hover:text-accent-1 transition-all">
+                            class="filter-btn border border-base-3 hover:border-accent-1 px-3 py-1 hover:text-accent-1 transition-all">
                             Graphic Design
                         </button>
                         <button data-filter="recentIllustrations"
-                            class="filter-btn border border-neutral-500 hover:border-accent-1 px-3 py-1 hover:text-accent-1 rounded-r-full transition-all">
+                            class="filter-btn border border-base-3 hover:border-accent-1 px-3 py-1 hover:text-accent-1 rounded-r-full transition-all">
                             Illustrations
                         </button>
                     </div>
                 </div>
 
-
-                <!-- Sections -->
                 <div class="sections" data-aos="fade-left">
                     <div class="section flex flex-nowrap gap-16 max-w-screen-xl mt-16 quicksand-bold overflow-x-scroll pb-16"
                         id="recentWebApplications">
@@ -300,30 +334,29 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Footer -->
-    <div class="mt-16">
-        <div class="flex flex-col mx-auto max-w-screen-xl text-center">
-            <div class="flex justify-between quicksand mb-12 " data-aos="fade-up">
+    <div class="mt-16 bg-base-2 pt-10">
+        <div class="flex flex-col mx-auto max-w-screen-xl text-center px-5 xl:px-0">
+            <div class="flex justify-between quicksand mb-12 ">
                 <div class="flex flex-col text-left w-1/3">
                     <span class="text-accent-1 text-lg mb-2">Pages</span>
-                    <a href="" class="hover:text-accent-1">About</a>
-                    <a href="" class="hover:text-accent-1">Contacts</a>
-                    <a href="" class="hover:text-accent-1">Portofolio</a>
-                    <a href="" class="hover:text-accent-1">Projects</a>
+                    <a href="" class="hover:text-accent-1 w-fit">About</a>
+                    <a href="" class="hover:text-accent-1 w-fit">Contacts</a>
+                    <a href="" class="hover:text-accent-1 w-fit">Portofolio</a>
+                    <a href="" class="hover:text-accent-1 w-fit">Projects</a>
                 </div>
-                <div class="flex flex-col text-center w-1/3">
+                <div class="flex flex-col text-center w-1/3 items-center">
                     <span class="text-accent-1 text-lg mb-2">Services</span>
-                    <a href="" class="hover:text-accent-1">Web Applications</a>
-                    <a href="" class="hover:text-accent-1">Graphic Designs</a>
-                    <a href="" class="hover:text-accent-1">Illustrations</a>
+                    <a href="" class="hover:text-accent-1 w-fit">Web Applications</a>
+                    <a href="" class="hover:text-accent-1 w-fit">Graphic Designs</a>
+                    <a href="" class="hover:text-accent-1 w-fit">Illustrations</a>
                 </div>
-                <div class="flex flex-col text-right w-1/3">
+                <div class="flex flex-col text-right w-1/3 items-end">
                     <span class="text-accent-1 text-lg mb-2">Connect with me</span>
-                    <span class="text-neutral-400">Muhammad Dagistan Silawane (Razes)</span>
-                    <a href="" class="hover:text-accent-1">iamrazes.official@gmail.com</a>
-
+                    <span class="text-base-3">Muhammad Dagistan Silawane (Razes)</span>
+                    <a href="" class="hover:text-accent-1 w-fit">iamrazes.official@gmail.com</a>
                 </div>
             </div>
             <h1 class="my-2 uppercase quicksand text-sm">Copyright © 2025 Razes</h1>
