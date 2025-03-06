@@ -74,7 +74,7 @@
                 <div class="flex flex-col w-1/3">
                     <span class="text-xl font-semibold mb-8 quicksand">Welcome</span>
                     <h1 class="text-6xl font-bold mb-2 oswald-bold">Hi, I'm Razes</h1>
-                    <h2 class="text-2xl font-semibold quicksand">Web Developer & Illustrator</h2>
+                    <h2 class="text-2xl font-semibold quicksand text-neutral-200">Web Developer & Illustrator</h2>
                     <span class="text-xl mb-6 quicksand">From Indonesia</span>
                     <a href="pages/contacts.html"
                         class="bg-accent-1 hover:bg-accent-3 rounded-xl px-5 py-3 flex gap-x-3 max-w-fit my-4 transition-all">
@@ -92,9 +92,9 @@
                 </div>
                 <div class="flex text-end justify-end quicksand w-1/3">
                     <div class="flex flex-col text-right justify-end items-end gap-y-8 py-8 text-2xl w-fit">
-                        <a class="hover:text-accent-1 transition-all">Web Applications</a>
-                        <a class="hover:text-accent-1 transition-all">Graphic Designs</a>
-                        <a class="hover:text-accent-1 transition-all">Illustrations</a>
+                        <a class="hover:text-accent-1 transition-all select-none">Web Applications</a>
+                        <a class="hover:text-accent-1 transition-all select-none">Graphic Designs</a>
+                        <a class="hover:text-accent-1 transition-all select-none">Illustrations</a>
                     </div>
                 </div>
             </div>
@@ -104,27 +104,27 @@
                 <h3>Follow Me:</h3>
                 <div class="flex gap-x-4">
                     <a href="#"
-                        class="rounded-full bg-base-6 hover:bg-base-5 w-10 h-10 flex items-center justify-center text-white">
+                        class="rounded-full bg-base-6 hover:bg-accent-3 w-10 h-10 flex items-center justify-center text-white">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
                     <a href="#"
-                        class="rounded-full bg-base-6 hover:bg-base-5 w-10 h-10 flex items-center justify-center text-white">
+                        class="rounded-full bg-base-6 hover:bg-accent-3 w-10 h-10 flex items-center justify-center text-white">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
                     <a href="#"
-                        class="rounded-full bg-base-6 hover:bg-base-5 w-10 h-10 flex items-center justify-center text-white">
+                        class="rounded-full bg-base-6 hover:bg-accent-3 w-10 h-10 flex items-center justify-center text-white">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
                     <a href="#"
-                        class="rounded-full bg-base-6 hover:bg-base-5 w-10 h-10 flex items-center justify-center text-white">
+                        class="rounded-full bg-base-6 hover:bg-accent-3 w-10 h-10 flex items-center justify-center text-white">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                     <a href="#"
-                        class="rounded-full bg-base-6 hover:bg-base-5 w-10 h-10 flex items-center justify-center text-white">
+                        class="rounded-full bg-base-6 hover:bg-accent-3 w-10 h-10 flex items-center justify-center text-white">
                         <i class="fa-brands fa-twitch"></i>
                     </a>
                     <a href="#"
-                        class="rounded-full bg-base-6 hover:bg-base-5 w-10 h-10 flex items-center justify-center text-white">
+                        class="rounded-full bg-base-6 hover:bg-accent-3 w-10 h-10 flex items-center justify-center text-white">
                         <i class="fa-brands fa-discord"></i>
                     </a>
                 </div>
@@ -214,12 +214,13 @@
         </div>
     </div>
 
-    <!-- Recent Works v2 -->
-    <div class="w-full mt-40 bg-base-6 py-14" data-aos="fade-up">
+    <!-- Works -->
+    <div class="w-full mt-40 bg-gradient-to-l from-base-1 to-base-2 py-14" data-aos="fade-up">
         <div class="flex flex-col max-w-screen-xl mx-auto">
             <div class="flex flex-col mb-4 w-full">
-                <div class="flex justify-between">
-                    <h1 class="text-3xl font-bold px-4 xl:px-0">My Works</h1>
+                <div class="flex flex-col justify-between quciksand">
+                    <h1 class="text-3xl font-bold px-4 xl:px-0">My Recent Works</h1>
+                    <p>Heres the list of what I have created</p>
                 </div>
             </div>
             <div class="flex items-center mx-auto gap-x-8 w-full justify-between">
@@ -236,10 +237,10 @@
                         <div class="carousel-item w-full flex-shrink-0 flex flex-col p-4 text-center">
                             <!-- <h2 class="text-xl mb-8 quicksand ">Web Developments</h2> -->
                             <div class="flex flex-col xl:flex-row gap-4 lg:gap-8 justify-center">
-                                <div class="rounded-lg p-3 xl:p-8  bg-base-1 shadow-lg xl:w-80 overflow-clip">
-                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2">
-                                        <img src="public/about.jpg" class="rounded-xl mb-2 shrink-0 w-20 h-20 ">
-                                        <div class="flex flex-col">
+                                <div class="rounded-lg p-4 xl:p-8 border-base-4 border border-dashed bg-base-1 shadow xl:w-80 overflow-clip">
+                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2 justify-between">
+                                        <img src="public/404.png" class="rounded-lg mb-2 shrink-0 object-cover w-20 h-20 xl:w-64 xl:h-64 ">
+                                        <div class="flex flex-col flex-grow">
                                             <h1 class="text-md xl:text-xl mb-2">Web Applications</h1>
                                             <span class="quicksand text-xs xl:text-sm">
                                                 I have created multiple web applications, working for personal or with
@@ -248,13 +249,13 @@
                                                 Laravel, TailwindCSS, Bootstrap.
                                             </span>
                                         </div>
-                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1">Learn More</a>
+                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1 flex-shrink-0">Learn More</a>
                                     </div>
                                 </div>
-                                <div class="rounded-lg p-4 xl:p-8  bg-base-1 shadow-lg  xl:w-80 overflow-clip">
-                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2">
-                                        <img src="public/about.jpg" class="rounded-xl mb-2 shrink-0 w-20 h-20 ">
-                                        <div class="flex flex-col">
+                                <div class="rounded-lg p-4 xl:p-8 border-base-4 border border-dashed bg-base-1 shadow xl:w-80 overflow-clip ">
+                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2 justify-between">
+                                        <img src="public/404.png" class="rounded-lg mb-2 shrink-0 object-cover w-20 h-20 xl:w-64 xl:h-64 ">
+                                        <div class="flex flex-col flex-grow">
                                             <h1 class="text-md xl:text-xl mb-2">Website</h1>
                                             <span class="quicksand text-xs xl:text-sm">
                                                 I can create a website page for single or multi purposes, with simple
@@ -263,14 +264,14 @@
                                                 that looks elegant and nice.
                                             </span>
                                         </div>
-                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1">Learn More</a>
+                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1 flex-shrink-0">Learn More</a>
                                     </div>
 
                                 </div>
-                                <div class="rounded-lg p-4 xl:p-8  bg-base-1 shadow-lg  xl:w-80 overflow-clip">
-                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2">
-                                        <img src="public/about.jpg" class="rounded-xl mb-2 shrink-0 w-20 h-20 ">
-                                        <div class="flex flex-col">
+                                <div class="rounded-lg p-4 xl:p-8 border-base-4 border border-dashed bg-base-1 shadow xl:w-80 overflow-clip ">
+                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2 justify-between">
+                                        <img src="public/404.png" class="rounded-lg mb-2 shrink-0 object-cover w-20 h-20 xl:w-64 xl:h-64 ">
+                                        <div class="flex flex-col flex-grow">
                                             <h1 class="text-md xl:text-xl mb-2">Web Designs</h1>
                                             <span class="quicksand text-xs xl:text-sm">
                                                 I can create web UI/UX design with responsive design and utilities
@@ -278,21 +279,21 @@
                                                 for many devices.
                                             </span>
                                         </div>
-                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1 ">Learn
-                                            More</a>
+                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1 flex-shrink-0">Learn More</a>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
+
 
                         <div class="carousel-item w-full flex-shrink-0 flex flex-col p-4 text-center">
-                            <!-- <h2 class="text-xl mb-8 quicksand">Graphic Designs</h2> -->
+                            <!-- <h2 class="text-xl mb-8 quicksand ">Web Developments</h2> -->
                             <div class="flex flex-col xl:flex-row gap-4 lg:gap-8 justify-center">
-                                <div class="rounded-lg p-3 xl:p-8  bg-neutral-900 shadow-lg xl:w-80 overflow-clip">
-                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2">
-                                        <img src="public/about.jpg" class="rounded-xl mb-2 shrink-0 w-20 h-20 ">
-                                        <div class="flex flex-col">
+                                <div class="rounded-lg p-4 xl:p-8 border-base-4 border border-dashed bg-base-1 shadow xl:w-80 overflow-clip ">
+                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2 justify-between">
+                                        <img src="public/404.png" class="rounded-lg mb-2 shrink-0 object-cover w-20 h-20 xl:w-64 xl:h-64 ">
+                                        <div class="flex flex-col flex-grow">
                                             <h1 class="text-md xl:text-xl mb-2">Web Applications</h1>
                                             <span class="quicksand text-xs xl:text-sm">
                                                 I have created multiple web applications, working for personal or with
@@ -301,13 +302,13 @@
                                                 Laravel, TailwindCSS, Bootstrap.
                                             </span>
                                         </div>
-                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1">Learn More</a>
+                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1 flex-shrink-0">Learn More</a>
                                     </div>
                                 </div>
-                                <div class="rounded-lg p-4 xl:p-8  bg-neutral-900 shadow-lg  xl:w-80 overflow-clip">
-                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2">
-                                        <img src="public/about.jpg" class="rounded-xl mb-2 shrink-0 w-20 h-20 ">
-                                        <div class="flex flex-col">
+                                <div class="rounded-lg p-4 xl:p-8 border-base-4 border border-dashed bg-base-1 shadow xl:w-80 overflow-clip ">
+                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2 justify-between">
+                                        <img src="public/404.png" class="rounded-lg mb-2 shrink-0 object-cover w-20 h-20 xl:w-64 xl:h-64 ">
+                                        <div class="flex flex-col flex-grow">
                                             <h1 class="text-md xl:text-xl mb-2">Website</h1>
                                             <span class="quicksand text-xs xl:text-sm">
                                                 I can create a website page for single or multi purposes, with simple
@@ -316,14 +317,14 @@
                                                 that looks elegant and nice.
                                             </span>
                                         </div>
-                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1">Learn More</a>
+                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1 flex-shrink-0">Learn More</a>
                                     </div>
 
                                 </div>
-                                <div class="rounded-lg p-4 xl:p-8  bg-neutral-900 shadow-lg  xl:w-80 overflow-clip">
-                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2">
-                                        <img src="public/about.jpg" class="rounded-xl mb-2 shrink-0 w-20 h-20 ">
-                                        <div class="flex flex-col">
+                                <div class="rounded-lg p-4 xl:p-8 border-base-4 border border-dashed bg-base-1 shadow xl:w-80 overflow-clip ">
+                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2 justify-between">
+                                        <img src="public/404.png" class="rounded-lg mb-2 shrink-0 object-cover w-20 h-20 xl:w-64 xl:h-64 ">
+                                        <div class="flex flex-col flex-grow">
                                             <h1 class="text-md xl:text-xl mb-2">Web Designs</h1>
                                             <span class="quicksand text-xs xl:text-sm">
                                                 I can create web UI/UX design with responsive design and utilities
@@ -331,21 +332,21 @@
                                                 for many devices.
                                             </span>
                                         </div>
-                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1 ">Learn
-                                            More</a>
+                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1 flex-shrink-0">Learn More</a>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
+
 
                         <div class="carousel-item w-full flex-shrink-0 flex flex-col p-4 text-center">
-                            <!-- <h2 class="text-xl quicksand mb-8 ">Illustrations</h2> -->
+                            <!-- <h2 class="text-xl mb-8 quicksand ">Web Developments</h2> -->
                             <div class="flex flex-col xl:flex-row gap-4 lg:gap-8 justify-center">
-                                <div class="rounded-lg p-3 xl:p-8  bg-neutral-900 shadow-lg xl:w-80 overflow-clip">
-                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2">
-                                        <img src="public/about.jpg" class="rounded-xl mb-2 shrink-0 w-20 h-20 ">
-                                        <div class="flex flex-col">
+                                <div class="rounded-lg p-4 xl:p-8 border-base-4 border border-dashed bg-base-1 shadow xl:w-80 overflow-clip ">
+                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2 justify-between">
+                                        <img src="public/404.png" class="rounded-lg mb-2 shrink-0 object-cover w-20 h-20 xl:w-64 xl:h-64 ">
+                                        <div class="flex flex-col flex-grow">
                                             <h1 class="text-md xl:text-xl mb-2">Web Applications</h1>
                                             <span class="quicksand text-xs xl:text-sm">
                                                 I have created multiple web applications, working for personal or with
@@ -354,13 +355,13 @@
                                                 Laravel, TailwindCSS, Bootstrap.
                                             </span>
                                         </div>
-                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1">Learn More</a>
+                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1 flex-shrink-0">Learn More</a>
                                     </div>
                                 </div>
-                                <div class="rounded-lg p-4 xl:p-8  bg-neutral-900 shadow-lg  xl:w-80 overflow-clip">
-                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2">
-                                        <img src="public/about.jpg" class="rounded-xl mb-2 shrink-0 w-20 h-20 ">
-                                        <div class="flex flex-col">
+                                <div class="rounded-lg p-4 xl:p-8 border-base-4 border border-dashed bg-base-1 shadow xl:w-80 overflow-clip ">
+                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2 justify-between">
+                                        <img src="public/404.png" class="rounded-lg mb-2 shrink-0 object-cover w-20 h-20 xl:w-64 xl:h-64 ">
+                                        <div class="flex flex-col flex-grow">
                                             <h1 class="text-md xl:text-xl mb-2">Website</h1>
                                             <span class="quicksand text-xs xl:text-sm">
                                                 I can create a website page for single or multi purposes, with simple
@@ -369,14 +370,14 @@
                                                 that looks elegant and nice.
                                             </span>
                                         </div>
-                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1">Learn More</a>
+                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1 flex-shrink-0">Learn More</a>
                                     </div>
 
                                 </div>
-                                <div class="rounded-lg p-4 xl:p-8  bg-neutral-900 shadow-lg  xl:w-80 overflow-clip">
-                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2">
-                                        <img src="public/about.jpg" class="rounded-xl mb-2 shrink-0 w-20 h-20 ">
-                                        <div class="flex flex-col">
+                                <div class="rounded-lg p-4 xl:p-8 border-base-4 border border-dashed bg-base-1 shadow xl:w-80 overflow-clip ">
+                                    <div class="flex flex-row xl:flex-col text-start flex-shrink gap-2 justify-between">
+                                        <img src="public/404.png" class="rounded-lg mb-2 shrink-0 object-cover w-20 h-20 xl:w-64 xl:h-64 ">
+                                        <div class="flex flex-col flex-grow">
                                             <h1 class="text-md xl:text-xl mb-2">Web Designs</h1>
                                             <span class="quicksand text-xs xl:text-sm">
                                                 I can create web UI/UX design with responsive design and utilities
@@ -384,13 +385,14 @@
                                                 for many devices.
                                             </span>
                                         </div>
-                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1 ">Learn
-                                            More</a>
+                                        <a href="/" class="mt-2 w-max hover:text-accent-2 text-accent-1 flex-shrink-0">Learn More</a>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
+
+                        
                     </div>
                 </div>
 
@@ -493,7 +495,7 @@
     </div> -->
 
     <!-- Footer -->
-    <div class="mt-16 bg-base-2 pt-10">
+    <div class="bg-base-2 pt-10">
         <div class="flex flex-col mx-auto max-w-screen-xl text-center px-5 xl:px-0">
             <div class="flex justify-between quicksand mb-12 ">
                 <div class="flex flex-col text-left w-1/3">
