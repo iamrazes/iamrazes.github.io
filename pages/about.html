@@ -51,8 +51,7 @@
             </button>
 
             <!-- Mobile Navigation Menu (Hidden by Default) -->
-            <div id="menu"
-                class="hidden flex-col gap-y-6 absolute bg-base-1 top-12 left-0 w-full shadow-md p-5 resize">
+            <div id="menu" class="hidden flex-col gap-y-6 absolute bg-base-1 top-12 left-0 w-full shadow-md p-5 resize">
                 <div class="flex flex-col text-center gap-y-4">
                     <a href="#" class="hover:text-accent-1">About</a>
                     <a href="#" class="hover:text-accent-1">Projects</a>
@@ -71,6 +70,7 @@
     <div class="flex flex-grow my-32 max-w-screen-xl mx-auto" data-aos="fade-up">
         <div class="flex justify-between gap-x-8 quicksand">
             <div class="w-1/2">
+                <!-- <img src="/public/about.jpg" class="w-96 h-96"> -->
                 <img src="/public/about.jpg" class="w-96 h-96">
             </div>
             <div class="flex flex-col w-1/2">
@@ -159,18 +159,10 @@
         </div>
     </footer>
 
+    <script src="src/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init(); // Initialize AOS
-    </script>
-    
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const menu = document.getElementById('menu');
-
-        menuBtn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
     </script>
 </body>
 
